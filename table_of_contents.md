@@ -7,7 +7,8 @@ Here's where the markdown goes for the table of contents, to give an idea of the
 1. variables, types, operations (python "as a calculator")
 1. functions, docstrings
 1. strings
-1. lists and NumPy arrays
+1. lists
+1. NumPy arrays
 1. dictionaries
 1. conditionals (if, elif, else, while, break, continue)
 1. loops
