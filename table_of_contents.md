@@ -2,7 +2,8 @@
 
 Here's where the markdown goes for the table of contents, to give an idea of the types of topics covered, week by week. This is not yet final, for obvious reasons.
 
-0. setup and markdown (pycharm and jupyter)
+
+1. setup and markdown (pycharm and jupyter)
 1. variables, types, comments (python "as a calculator")
 1. functions
 1. strings
@@ -15,7 +16,7 @@ Here's where the markdown goes for the table of contents, to give an idea of the
 1. generators and lazyness
 1. classes
 
-
+### Appendices
 1. accelerating with numba jit
 1. accelerating cython
 1. graphing and animation
