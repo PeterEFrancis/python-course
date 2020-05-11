@@ -1,6 +1,6 @@
 # Table of Contents
 
-Here's where the markdown goes for the table of contents, to give an idea of the types of topics covered, week by week. This is not yet final, for obvious reasons.
+Here's where the markdown goes for the table of contents, to give an idea of the types of topics covered.
 
 
 1. setup and markdown (pycharm and jupyter)
