@@ -71,7 +71,7 @@
       </table>
       <br>
       <h2>Stages</h2>
-      <table class="table table-bordered" id="stages">
+      <table class="table table-bordered">
         <thead>
           <tr>
             <th>Stage</th><th>Anna</th><th>David</th><th>Emily D</th><th>Emily K</th><th>Joseph</th><th>Kaley</th><th>Keir</th><th>Ryzeson</th><th>Sophie</th><th>Thomas</th><th>William</th>
@@ -89,46 +89,41 @@
 
   $(document).ready(function() {
 
-    $.ajax({
-        type: "GET",
-        url: "stages.txt",
-        dataType: "text",
-        success: function(data) {
-          var html = "";
+    $.get('http://peterefrancis.com/python-course/stages.csv', function(data) {
+      var html = "";
 
-          var rows = data.split("\n");
-          rows.forEach( function process_rows(row) {
-            html += "<tr>";
-            var columns = row.split(",");
-            columns.forEach( function process_data(data) {
-              if (data === "") {
-                html += "<td class='active'></td>";
-              }
-              else if (data === "0") {
-                html += "<td></td>";
-              }
-              else if (data === "1") {
-                html += "<td class='success'></td>";
-              }
-              else if (data === "-1") {
-                html += "<td class='warning'></td>";
-              }
-              else if (data === "-2") {
-                html += "<td class='danger'></td>";
-              }
-              else {
-                html += "<td>" + data + "</td>";
-              }
-            });
-            html += "</tr>";
-          });
-          $('#stage-data').append(html);
-        }
+      var rows = data.split("\n");
+      rows.forEach( function process_rows(row) {
+        html += "<tr>";
+        var columns = row.split(",");
+        columns.forEach( function process_data(data) {
+          if (data === "") {
+            html += "<td class='active'></td>";
+          }
+          else if (data === "0") {
+            html += "<td></td>";
+          }
+          else if (data === "1") {
+            html += "<td class='success'></td>";
+          }
+          else if (data === "-1") {
+            html += "<td class='warning'></td>";
+          }
+          else if (data === "-2") {
+            html += "<td class='danger'></td>";
+          }
+          else {
+            html += "<td>" + data + "</td>";
+          }
+        });
+        html += "</tr>";
       });
+      $('#stage-data').append(html);
+    });
 
 
     $('#students').DataTable({"paging": false, "info": false});
-    $('#stages').DataTable({"paging": false, "info": false});
+    // $('#stages').DataTable({"paging": false, "info": false});
   } );
 
 
