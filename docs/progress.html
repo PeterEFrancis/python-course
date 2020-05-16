@@ -12,7 +12,12 @@
 
   <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.21/datatables.min.js"></script>
 
-
+  <style>
+    .key {
+      padding: 5px;
+      border: 1px solid black;
+    }
+  </style>
 
 </head>
 <body>
@@ -25,6 +30,13 @@
       <br>
       <h2>Stages</h2>
       <table class="table table-bordered" id="stages"></table>
+      <div style="max-width: 150px">
+        <h5>Schedule Key</h5>
+        <p class="key">In progress</p>
+        <p class="key bg-success">Completed</p>
+        <p class="key bg-warning">overdue, incomplete</p>
+        <p class="key bg-danger">overdue, empty</p>
+      </div>
       <br>
       <h2>Students</h2>
       <table class="table table-bordered" id="students">
@@ -41,13 +53,13 @@
             <td>Anna</td><td>Bechenek</td><td></td><td>bochan01</td><td>Mac</td>
           </tr>
           <tr>
-            <td>David</td><td>Draghi</td><td></td><td>dragda02</td><td>Mac</td>
+            <td>David</td><td>Draghi</td><td><a href="https://github.com/dragda02" target="_blank">dragda02</a></td><td>dragda02</td><td>Mac</td>
           </tr>
           <tr>
             <td>Emily</td><td>Dalgleish</td><td></td><td>dalgem01</td><td>Mac</td>
           </tr>
           <tr>
-            <td>Emily</td><td>Kilcullen</td><td></td><td>kilcem01</td><td>Mac</td>
+            <td>Emily</td><td>Kilcullen</td><td><a href="https://github.com/emilykilcullen" target="_blank">emilykilcullen</a></td><td>kilcem01</td><td>Mac</td>
           </tr>
           <tr>
             <td>Joseph</td><td>Rutledge</td><td></td><td>rutljo01</td><td>Windows</td>
@@ -59,7 +71,7 @@
             <td>Keir</td><td>Lockeridge</td><td></td><td>lockeridge</td><td>Mac</td>
           </tr>
           <tr>
-            <td>Ryzeson</td><td>Maravich</td><td></td><td>marary01</td><td>Windows with Git Bash</td>
+            <td>Ryzeson</td><td>Maravich</td><td><a href="https://github.com/Ryzeson" target="_blank">Ryzeson</a></td><td>marary01</td><td>Windows with Git Bash</td>
           </tr>
           <tr>
             <td>Sophie</td><td>Howie</td><td></td><td>howiso01</td><td>Windows</td>
@@ -68,7 +80,7 @@
             <td>Thomas</td><td>Cassara</td><td></td><td>cassth01</td><td>?</td>
           </tr>
           <tr>
-            <td>William</td><td>Durham</td><td></td><td>durhwi01</td><td>Windows</td>
+            <td>William</td><td>Durham</td><td><a href="https://github.com/williamrdurham" target="_blank">williamrdurham</a></td><td>durhwi01</td><td>Windows</td>
           </tr>
         </tbody>
       </table>
@@ -93,7 +105,7 @@
       });
       html += "</tr></thead><tbody>"
 
-      rows.slice(1,rows.length).forEach( function process_rows(row) {
+      rows.slice(1,rows.length - 1).forEach( function process_rows(row) {
         html += "<tr>";
         var columns = row.split(",");
         columns.forEach( function process_data(data) {
@@ -113,7 +125,7 @@
             html += "<td class='danger'></td>";
           }
           else {
-            html += "<td>" + data.substring(1, data.length - 1) + "</td>";
+            html += "<th>" + data.substring(1, data.length - 1) + "</th>";
           }
         });
         html += "</tr>";
