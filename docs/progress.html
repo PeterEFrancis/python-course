@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Python Course | Progress</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.21/datatables.min.css"/>
+
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.21/datatables.min.js"></script>
+
+
+
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <a href="index.html" style="display:inline-block; margin-top:10px;">Home</a>
+      <h1 class="text-center">Progress</h1>
+      <br>
+      <h2>Students</h2>
+      <table class="table table-bordered" id="students">
+        <thead>
+          <tr>
+            <th>First</th><th>Last</th><th>GitHub Username</th><th>Email --@gettysburg.edu</th><th>Operating System</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ana</td><td>Geddes</td><td></td><td>geddan01</td><td>?</td>
+          </tr>
+          <tr>
+            <td>Anna</td><td>Bechenek</td><td></td><td>bochan01</td><td>Mac</td>
+          </tr>
+          <tr>
+            <td>David</td><td>Draghi</td><td></td><td>dragda02</td><td>Mac</td>
+          </tr>
+          <tr>
+            <td>Emily</td><td>Dalgleish</td><td></td><td>dalgem01</td><td>Mac</td>
+          </tr>
+          <tr>
+            <td>Emily</td><td>Kilcullen</td><td></td><td>kilcem01</td><td>Mac</td>
+          </tr>
+          <tr>
+            <td>Joseph</td><td>Rutledge</td><td></td><td>rutljo01</td><td>Windows</td>
+          </tr>
+          <tr>
+            <td>Kaley</td><td>Michael</td><td></td><td>michka02</td><td>Mac</td>
+          </tr>
+          <tr>
+            <td>Keir</td><td>Lockeridge</td><td></td><td>lockeridge</td><td>Mac</td>
+          </tr>
+          <tr>
+            <td>Ryzeson</td><td>Maravich</td><td></td><td>marary01</td><td>Windows with Git Bash</td>
+          </tr>
+          <tr>
+            <td>Sophie</td><td>Howie</td><td></td><td>howiso01</td><td>Windows</td>
+          </tr>
+          <tr>
+            <td>Thomas</td><td>Cassara</td><td></td><td>cassth01</td><td>?</td>
+          </tr>
+          <tr>
+            <td>William</td><td>Durham</td><td></td><td>durhwi01</td><td>Windows</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h2>Stages</h2>
+      <table class="table table-bordered" id="stages">
+        <thead>
+          <tr>
+            <th>Stage</th><th>Anna</th><th>David</th><th>Emily D</th><th>Emily K</th><th>Joseph</th><th>Kaley</th><th>Keir</th><th>Ryzeson</th><th>Sophie</th><th>Thomas</th><th>William</th>
+          </tr>
+        </thead>
+        <tbody id="stage-data">
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+  $(document).ready(function() {
+
+    $.ajax({
+        type: "GET",
+        url: "stages.txt",
+        dataType: "text",
+        success: function(data) {
+          var html = "";
+
+          var rows = data.split("\n");
+          rows.forEach( function process_rows(row) {
+            html += "<tr>";
+            var columns = row.split(",");
+            columns.forEach( function process_data(data) {
+              if (data === "") {
+                html += "<td class='active'></td>";
+              }
+              else if (data === "0") {
+                html += "<td></td>";
+              }
+              else if (data === "1") {
+                html += "<td class='success'></td>";
+              }
+              else if (data === "-1") {
+                html += "<td class='warning'></td>";
+              }
+              else if (data === "-2") {
+                html += "<td class='danger'></td>";
+              }
+              else {
+                html += "<td>" + data + "</td>";
+              }
+            });
+            html += "</tr>";
+          });
+          $('#stage-data').append(html);
+        }
+      });
+
+
+    $('#students').DataTable({"paging": false, "info": false});
+    $('#stages').DataTable({"paging": false, "info": false});
+  } );
+
+
+</script>
+
+</body>
+</html>
