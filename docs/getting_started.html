@@ -124,7 +124,7 @@
         <li>On the left hand side of the window, you should see a file structure tree with "learning-python" the parent directory, and inside it, one file named "README.md".</li>
         <li>Click "README.md" to open it. Underneath "# learning-python", type anything you want.</li>
         <li>Right click "learning-python" and create a new File named ".gitignore" (dont miss the dot!).</li>
-        <li>In ".gitignore", type "**?.ipynb_checkpoints".</li>
+        <li>In ".gitignore", type "**/.ipynb_checkpoints" and save the file.</li>
         <li>In the bottom right hand corner, click "Git". (Sign into your github account if it prompts you to do so and if there is an option to save your credentials, check it).</li>
         <li>Click "Stage" on the top right, enter a commit message like "initial test", and then click "Commit".</li>
         <li>Click "Push" on the bottom of the window.</li>
@@ -154,46 +154,63 @@
       <ol>
         <li>Go to <a href="https://www.jetbrains.com/pycharm/download/#section=windows">https://www.jetbrains.com/pycharm/download/#section=windows</a></li>
         <li>Download the "Community" version, which is free.</li>
-        <li>Follow all of the intstallation prompts with all of the default options except for the ??? page, on which you should click every check box available.</li>
-        <li>Once the installation is complete, you will be prompted to restart your computer. Do so.</li>
+        <li>Follow all of the intstallation prompts with all of the default options except for the "Installation Options" page, on which you should click every check box available.</li>
+        <li>Once the installation is complete, if you will be prompted to restart your computer, do so.</li>
       </ol>
 
       <h3>Step 3: Create a Git Repository for this course</h3>
-      <!-- <ol>
+      <ol>
+        <li>Create a new folder in your user directory called "Programming".</li>
         <li>Log into your Github account</li>
         <li>Click the green "New" repository button.</li>
         <li>Enter "learning-python" as the repository name.</li>
         <li>Click the check box that says Initialize this repository with a README.</li>
         <li>Click "Create Repository".</li>
         <li>Click "Clone or Download" and copy the URL that is in the dialogue that opens.</li>
-        <li>Open PyCharm.</li>
-        <li></li>
-        <li>"File" > "Open Project Folder", and open the folder that you just created ("learning-python") which is in the new master directory "Programming". (I suggest you drag "Programming" to the side of a finder window to be in teh sidebar with Documents, Desktop, etc.).</li>
+        <li>Open PyCharm and click "Skip Remaining and Set Defaults" on the bottom left of the window.</li>
+        <li>Click "Get from Version Control".</li>
+        <li>Paste the URL that you copied into the input box for the URL.</li>
+        <li>Make sure the drop down menue has "Git" selected. Click "Download Git" if there is a note that says that git is not installed. Wait for it to finish downloading.</li>
+        <li>Click "Clone".</li>
+        <li>Enter GitHub login credentials and check "Rememeber".</li>
+        <li>Close the "Tip of the Day" popup.</li>
         <li>On the left hand side of the window, you should see a file structure tree with "learning-python" the parent directory, and inside it, one file named "README.md".</li>
-        <li>Click "README.md" to open it. Underneath "# learning-python", type anything you want.</li>
+        <li>Click "README.md" to open it.</li>
+        <li>Click the button with four horizontal lines on the top right of the file in order to change the view of the markdown from rendered, to un-rendered.</li>
+        <lo>Underneath "# learning-python", type anything you want.</li>
         <li>Right click "learning-python" and create a new File named ".gitignore" (dont miss the dot!).</li>
-        <li>In ".gitignore", type "**?.ipynb_checkpoints".</li>
-        <li>Open Pycharm.</li>
-        <li></li>
-        <li>At the bottom of the window click ?? terminal ?? .</li>
-        <li>Run the line
-          <pre>pip install jupyter</pre>
-        </li>
-        <li>Open your GitHub account again and refresh the page. You should see that "README.md" now has the line that you added in Atom. You should also be able to see the ".gitignore" file.</li>
-      </ol> -->
+        <li>When the dialogue comes up to "Add File to Git", click "Add".</li>
+        <li>In ".gitignore", type "**/.ipynb_checkpoints" and save the file.</li>
+        <li>"VCS" > "Commit" (or "Ctrl + K").</li>
+        <li>Enter a commit message like "initial test", and then click the blue "Commit" button.</li>
+        <li>If prompted, enter name and GitHub-associated email, and check "Set properties globally". Then click "Set and Commit".</li>
+        <li>"VCS" > "Git" > "Push" (or "Ctrl + Shift + K"), then push the blue "Push button".</li>
+        <li>If prompted, enter GitHub username and password, and check "Rememeber". Then click "Log In".</li>
+        <li>Open your GitHub account again and refresh the page. You should see that "README.md" now has the line that you added in PyCharm. You should also be able to see the ".gitignore" file.</li>
+      </ol>
 
-      <h3>Step 4: Install Jupyter</h3>
-      <!-- <ol>
-        <li>Open Pycharm.</li>
-        <li>"File" > "Settings", and then ??? </li>
+      <h3>Step 4: Setting the Virtual Environment Python Interpreter</h3>
+      <ol>
+        <li>Open Pycharm and make sure you are in the "learning-python" repository.</li>
+        <li>"File" > "Settings", and then "Project: learning-python".</li>
+        <li>Click "Project interpreter".</li>
         <li>Click the "+" on the right side of the window.</li>
-        <li>Set the ??? to Python ???.</li>
-        <li>Search for and install "jupyter"</li>
-        <li>At the bottom of the window click ?? terminal ?? .</li>
-        <li>Run the line ? needed ?
-          <pre>pip install jupyter notebook</pre>
-        </li>
-      </ol> -->
+        <li>In the drop down menu, select "Show all" and press the plus sign.</li>
+        <li>Select "Virtual Environment" in the left-hand column, and then "New Environement". Maker sure that the "Location" ends with "\venv". Click "Ok". This will set the Python interpreter.</li>
+        <li>If you do not see a Windows pupup asking for permission to make changes, check the taskbar to open the popup. Click "Yes" and the download will commence.</li>
+        <li>You will now see "Python 3.8 (learning-peython)" as an option for an intertreter. Select it and Click "OK".</li>
+        <li>Click "OK" again to close the "Settings" dialogue.</li>
+      </ol>
+
+      <h3>Step 5: Install Jupyter</h3>
+      <ol>
+        <li>"File" > "Settings", and then "Project: learning-python".</li>
+        <li>Click "Project interpreter".</li>
+        <li>Click the "+" on the right side of the window.</li>
+        <li>Search for "jupyter" and once jupyter is selected, check the "Install to user's site package directory" checkbox and click the "Install Package" button.</li>
+        <li>Wait for the download to complete (you can see a wheel spinning ject to "jupyter") -- it might take a while.</li>
+        <li>Close that dialogue and click "OK" to close the "Settings" dialogue.<li>
+      </ol>
 
     </div>
 

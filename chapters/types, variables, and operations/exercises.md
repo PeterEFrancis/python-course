@@ -2,10 +2,10 @@
 
 1. Use python to calculate the following:
  - the third power of the sum of 15 more than 25 and 7 less than 30, minus the remainder of 6478 divided by 267
- - the fifth root of 34567 (rememeber that the nth root of a number is the same as the 1/nth power)
+ - the fifth root of 34567 (remember that the nth root of a number is the same as the 1/nth power)
  - the 345678th power of 2 (yes, you can do huge calculations like that now---be excited!)
 
-2. Define a complex variable `a` to any complex value you would like. Then on the line beneath it, do a computation to find the complex modulus of `a`. You may only use the variable `a` in the second line (the code should output the [complex modulus](https://mathworld.wolfram.com/ComplexModulus.html) of whatever `a` is defined to be). **Hint:** Recall that if `a` is the complex number x + yi, the complex modulus of `a` is the square root of x squared plus y squared.
+2. Define a complex variable `a` to any complex value you would like. Then on the next line, do a computation to find the complex modulus of `a`. You may only use the variable `a` in the second line (the code should output the [complex modulus](https://mathworld.wolfram.com/ComplexModulus.html) of whatever `a` is defined to be). **Hint:** Recall that if `a` is the complex number x + yi, the complex modulus of `a` is the square root of x squared plus y squared.
 
 3. Explore the documentation for the `math` module and learn about ten functions and/or variables that you think are useful. Then, demonstrate their use. You can view the documentation here: https://docs.python.org/3/library/math.html.
 
@@ -22,4 +22,4 @@
 | `False`| `False`|     ?     |    ?     |
 
 
-6. Look online for a table that explains python operator precedence. In a few words, explain what operator precedence is and then program an expression that uses all of the arithmetic operators discussed in "materials".
+6. Look online for a table that explains python operator precedence and in a few words, explain what operator precedence is. Then program an expression that uses all of the arithmetic operators discussed in "material.md" and list out the operations in the order that they are executed.
