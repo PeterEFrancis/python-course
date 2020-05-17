@@ -7,7 +7,7 @@ Python is a great (first) programming language to learn: it has a simple and clu
 
 ### Chapters
  - introduction
- - variables, types, and operations
+ - types, variables, and operations
  - strings
  - functions, docstrings
  - lists and tuples
@@ -32,4 +32,4 @@ Python is a great (first) programming language to learn: it has a simple and clu
  - PostgreSQL
 
 
-I would like to acknowledge both https://docs.python.org/ and https://www.w3schools.com/ from whom I have adapted material.
+I would like to acknowledge both https://docs.python.org/ and https://www.w3schools.com/, from whom I have adapted some material.

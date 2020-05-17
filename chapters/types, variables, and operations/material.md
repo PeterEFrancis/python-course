@@ -12,7 +12,7 @@ Data in python comes in a variety of *types*:
  - Boolean Type:	`bool`
  - Binary Types:	`bytes`, `bytearray`, `memoryview`
 
-Different data types are useful for different task, so it is important to understand how each one works. In this chapter, we will be learning about numberic and boolean types as well as breifly discussing tuples. In following chapters we will learn about the others.
+Different data types are useful for different tasks, so it is important to understand how each one works. In this chapter, we will be learning about numberic and boolean types as well as breifly discussing tuples. In following chapters we will learn about the others.
 
 The type of a data object can be found by calling `type()` on it.
 

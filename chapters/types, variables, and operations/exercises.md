@@ -1,4 +1,4 @@
-# Operations Exercises
+# Types, Variables, and Operations Exercises
 
 1. Use python to calculate the following:
  - the third power of the sum of 15 more than 25 and 7 less than 30, minus the remainder of 6478 divided by 267
@@ -10,11 +10,11 @@
 
 1. Explore the documentation for the `math` module and learn about ten functions and/or variables that you think are useful. Then, demonstrate their use. You can view the documentation here: https://docs.python.org/3/library/math.html.
 
-1. Try to cause some errors (do 5), and make a note of what the errors show you. Then below the bad code, fix it. This will help you in the future when you get these errors accidentally, so you know what caused them and how to fix them. If you are stuck, try things like illegally converting between types and making incomplete statements.
+1. Try to cause some errors (do 5), and make a note of what the errors show you. Then below the bad code, fix it. This will help you in the future when you get these errors accidentally, so you know what caused them and how to fix them. If you are stuck, try things like illegally converting between types or making incomplete statements.
 
-1. Use python to do the computations that will fill in this truth table in order to demonstrate [DeMorgan's Law](https://en.wikipedia.org/wiki/De_Morgan%27s_laws).
+1. What python lines, P and Q, would fill in this truth table in order to demonstrate [DeMorgan's Law](https://en.wikipedia.org/wiki/De_Morgan%27s_laws)?
 
-|   `x`  |   `y`  |     ?     |    ?     |
+|   `x`  |   `y`  |     P     |    Q     |
 |:------:|:------:|:---------:|:--------:|
 | `True` | `True` |     ?     |    ?     |
 | `True` | `False`|     ?     |    ?     |
