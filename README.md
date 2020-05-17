@@ -8,7 +8,8 @@ Python is a great (first) programming language to learn: it has a simple and clu
 
 ### Chapters
  - introduction
- - variables, types, operations (python "as a calculator")
+ - operations
+ - variables and types
  - strings
  - functions, docstrings
  - lists
@@ -16,8 +17,8 @@ Python is a great (first) programming language to learn: it has a simple and clu
  - dictionaries
  - conditionals (if, elif, else, while, break, continue)
  - loops
- - input / output (`input()`, terminal basics [i.e. piping])
- - higher order functions and `map`/`filter`/`reduce`
+ - input, output (`input()`, terminal basics [i.e. piping])
+ - higher order functions and `map`,`filter`,`reduce`
  - generators and lazyness (comprehesion)
  - classes
  - exceptions
