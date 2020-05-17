@@ -3,23 +3,21 @@
 Python is a great (first) programming language to learn: it has a simple and clutter-free syntax, and can be used in a large number of situations.
 
 
-
 ## Table of Contents
 
 ### Chapters
  - introduction
- - operations
- - variables and types
+ - variables, types, and operations
  - strings
  - functions, docstrings
- - lists
+ - lists and tuples
  - NumPy arrays
  - dictionaries
- - conditionals (if, elif, else, while, break, continue)
+ - conditionals
  - loops
- - input, output (`input()`, terminal basics [i.e. piping])
- - higher order functions and `map`,`filter`,`reduce`
- - generators and lazyness (comprehesion)
+ - input, output
+ - higher order functions
+ - generators and lazyness
  - classes
  - exceptions
 
@@ -32,3 +30,6 @@ Python is a great (first) programming language to learn: it has a simple and clu
  - IPython
  - Flask
  - PostgreSQL
+
+
+I would like to acknowledge both https://docs.python.org/ and https://www.w3schools.com/ from whom I have adapted material.

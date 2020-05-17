@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Introduction to Python | Getting Started</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+      .key {
+        padding: 5px;
+        border: 1px solid black;
+      }
+
+      .row {
+        margin-bottom: 20px;
+      }
+
+      pre {
+        margin-top: 15px;
+      }
+
+    </style>
+
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <a href="index.html" style="display:inline-block; margin-top:10px;">Home</a>
+      <h1 class="text-center">Getting Started</h1>
+      <p class="text-center">how to install all necessasry software and set up a workspace for this course</p>
+
+    </div>
+  </div>
+
+
+  <div class="row">
+
+
+    <div class="col-lg-6" id="mac">
+      <h2>MacOS</h2>
+      <!-- <h3>Step 0: Install Xcode (f you dont already have it)</h3> -->
+      <h3>Step 1: Create a GitHub Pro Account</h3>
+      <ol>
+        <li>Go to <a href-"https://github.com/">github.com</a></li>
+        <li>Create an account <strong>with your @gettysburg.edu email address</strong>.</li>
+        <li>Confirm email.</li>
+        <li>Go to <a href="https://education.github.com/pack">https://education.github.com/pack</a>.</li>
+        <li>Click "Get the pack" and fill out the form and follow their directions.</li>
+        <li>Log into your GitHub Account and you should see a "PRO" badge on your profile.</li>
+        <li>Update in any profile information you would like to.</li>
+        <li>In the search dialogue, search for my username, "PeterEFrancis", and follow me, so I can see your account.</li>
+      </ol>
+
+      <h3>Step 2: Download Atom</h3>
+      <ol>
+        <li>Go to <a href="https://atom.io/">atom.io</a></li>
+        <li>Click download and note the saved file location.</li>
+        <li>After installing, unzip the file, and drag the atom application to your Applications folder. (You might have to go to security and privacy in system preferences and allow Atom to be run).</li>
+        <li>Open Atom</li>
+        <li>"Atom" > "Preferences", and then " + Install"</li>
+        <li>Search for and install the "language-python" and "teletype packages" (if they are not already instsalled).</li>
+      </ol>
+
+      <h3>Step 3: Install Homebrew</h3>
+      <ol>
+        <li>Open a terminal window and enter the following line:
+        <pre>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</pre>
+        Press the enter key to run.</li>
+        <li>Confirm any prompts in the terminal as Homebrew is downloading. Depending on your Xcode installation, this may also install "Command Line Tools".</li>
+        <li>After Homebrew has installed, if you are using OS X 10.12 (Sierra) or older, run this line in the terminal
+        <pre>export PATH=/usr/local/bin:/usr/local/sbin:$PATH</pre>
+        otherwise run this line
+        <pre>export PATH="/usr/local/opt/python/libexec/bin:$PATH"</pre>
+        </li>
+      </ol>
+
+      <h3>Step 4: Install Python (and pip)</h3>
+      <ol>
+        <li>Run this line in the terminal:
+          <pre>brew install python</pre>
+        </li>
+        <li>Run this line in the terminal
+          <pre>which python3</pre>
+        and you should see "/usr/local/bin/python3".
+        </li>
+      </ol>
+
+      <h3>Step 5: Install Jupter notebook</h3>
+      <ol>
+        <li>Run this line in the terminal:
+          <pre>python3 -m pip install jupyter</pre>
+        </li>
+        <li>Run this line in the terminal
+          <pre>which jupyter</pre>
+        and you should see "/usr/local/bin/jupyter".
+        </li>
+      </ol>
+
+      <h3>Step 6: Install Git (if you don't have it)</h3>
+      <p>Run this line in the terminal:</p>
+      <pre>git --version</pre>
+      <p>If you don’t have git installed already, this will prompt you to install it. If you do have it, you will see something like "git version 2.24.2 (Apple Git-127)".</p>
+
+      <h3>Step 7: Create a Git Repository for this course</h3>
+      <ol>
+        <li>Log into your Github account</li>
+        <li>Click the green "New" repository button.</li>
+        <li>Enter "learning-python" as the repository name.</li>
+        <li>Click the check box that says Initialize this repository with a README.</li>
+        <li>Click "Create Repository".</li>
+        <li>Click "Clone or Download" and copy the URL that is in the dialogue that opens.</li>
+        <li>Open a terminal window and run the following lines.
+          <pre>cd ~</pre>
+          <pre>mkdir Programming</pre>
+          <pre>cd Programming</pre>
+          <pre>git clone &lt;paste the link you copied here&gt;</pre>
+        </li>
+        <li>Open Atom</li>
+        <li>"File" > "Open Project Folder", and open the folder that you just created ("learning-python") which is in the new master directory "Programming". (I suggest you drag "Programming" to the side of a finder window to be in teh sidebar with Documents, Desktop, etc.).</li>
+        <li>On the left hand side of the window, you should see a file structure tree with "learning-python" the parent directory, and inside it, one file named "README.md".</li>
+        <li>Click "README.md" to open it. Underneath "# learning-python", type anything you want.</li>
+        <li>Right click "learning-python" and create a new File named ".gitignore" (dont miss the dot!).</li>
+        <li>In ".gitignore", type "**?.ipynb_checkpoints".</li>
+        <li>In the bottom right hand corner, click "Git". (Sign into your github account if it prompts you to do so and if there is an option to save your credentials, check it).</li>
+        <li>Click "Stage" on the top right, enter a commit message like "initial test", and then click "Commit".</li>
+        <li>Click "Push" on the bottom of the window.</li>
+        <li>Open your GitHub account again and refresh the page. You should see that "README.md" now has the line that you added in Atom. You should also be able to see the ".gitignore" file.</li>
+      </ol>
+
+
+    </div>
+
+
+
+    <div class="col-lg-6" id="Windows">
+      <h2>Windows</h2>
+      <h3>Step 1: Create a GitHub Pro Account</h3>
+      <ol>
+        <li>Go to <a href-"https://github.com/">github.com</a></li>
+        <li>Create an account <strong>with your @gettysburg.edu email address</strong>.</li>
+        <li>Confirm email.</li>
+        <li>Go to <a href="https://education.github.com/pack">https://education.github.com/pack</a>.</li>
+        <li>Click "Get the pack" and fill out the form and follow their directions.</li>
+        <li>Log into your GitHub Account and you should see a "PRO" badge on your profile.</li>
+        <li>Update in any profile information you would like to.</li>
+        <li>In the search dialogue, search for my username, "PeterEFrancis", and follow me, so I can see your account.</li>
+      </ol>
+
+      <h3>Step 2: Install PyCharm</h3>
+      <ol>
+        <li>Go to <a href="https://www.jetbrains.com/pycharm/download/#section=windows">https://www.jetbrains.com/pycharm/download/#section=windows</a></li>
+        <li>Download the "Community" version, which is free.</li>
+        <li>Follow all of the intstallation prompts with all of the default options except for the ??? page, on which you should click every check box available.</li>
+        <li>Once the installation is complete, you will be prompted to restart your computer. Do so.</li>
+      </ol>
+
+      <h3>Step 3: Create a Git Repository for this course</h3>
+      <!-- <ol>
+        <li>Log into your Github account</li>
+        <li>Click the green "New" repository button.</li>
+        <li>Enter "learning-python" as the repository name.</li>
+        <li>Click the check box that says Initialize this repository with a README.</li>
+        <li>Click "Create Repository".</li>
+        <li>Click "Clone or Download" and copy the URL that is in the dialogue that opens.</li>
+        <li>Open PyCharm.</li>
+        <li></li>
+        <li>"File" > "Open Project Folder", and open the folder that you just created ("learning-python") which is in the new master directory "Programming". (I suggest you drag "Programming" to the side of a finder window to be in teh sidebar with Documents, Desktop, etc.).</li>
+        <li>On the left hand side of the window, you should see a file structure tree with "learning-python" the parent directory, and inside it, one file named "README.md".</li>
+        <li>Click "README.md" to open it. Underneath "# learning-python", type anything you want.</li>
+        <li>Right click "learning-python" and create a new File named ".gitignore" (dont miss the dot!).</li>
+        <li>In ".gitignore", type "**?.ipynb_checkpoints".</li>
+        <li>Open Pycharm.</li>
+        <li></li>
+        <li>At the bottom of the window click ?? terminal ?? .</li>
+        <li>Run the line
+          <pre>pip install jupyter</pre>
+        </li>
+        <li>Open your GitHub account again and refresh the page. You should see that "README.md" now has the line that you added in Atom. You should also be able to see the ".gitignore" file.</li>
+      </ol> -->
+
+      <h3>Step 4: Install Jupyter</h3>
+      <!-- <ol>
+        <li>Open Pycharm.</li>
+        <li>"File" > "Settings", and then ??? </li>
+        <li>Click the "+" on the right side of the window.</li>
+        <li>Set the ??? to Python ???.</li>
+        <li>Search for and install "jupyter"</li>
+        <li>At the bottom of the window click ?? terminal ?? .</li>
+        <li>Run the line ? needed ?
+          <pre>pip install jupyter notebook</pre>
+        </li>
+      </ol> -->
+
+    </div>
+
+
+
+
+  </div>
+</div>
+<br><br><br><br>
+</body>
+</html>

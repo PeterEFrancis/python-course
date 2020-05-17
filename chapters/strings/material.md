@@ -83,6 +83,9 @@ print("abc" * 3)
 ```
 > `abcabcabc`
 
+
+## Casting
+
 Sometimes we wish to treat a nonstring as a string. Here is an example.
 
 ```python
@@ -96,6 +99,22 @@ print("my_num is " + str(my_num))
 
 `str` is the *conversion function* that returns a string representation of any python object. We will return to `str` in the chapter on classes.
 
+In the first chapter, we used `int()` to convert other numeric types to `int`s. `int` can also make an integer from a string literal that contains an integer (surrounding whitespace is ok).
+
+```python
+x = int('3 ')
+type(x)
+```
+> `<class 'int'>`
+
+In fact, `int()` has an optional second argument, that specifies the base to interpret the integer in the string as (and convert into base 10). The possible base numbers are inclusivelty between 2 and 36, and 0.
+
+The following will convert the base 6 number `'123450'` to base 10.
+
+```python
+int('123450', 6)
+```
+> `11190`
 
 ## Splitting strings
 
