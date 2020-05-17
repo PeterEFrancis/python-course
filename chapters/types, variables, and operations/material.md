@@ -12,7 +12,7 @@ Data in python comes in a variety of *types*:
  - Boolean Type:	`bool`
  - Binary Types:	`bytes`, `bytearray`, `memoryview`
 
-Different data types are useful for different tasks, so it is important to understand how each one works. In this chapter, we will be learning about numberic and boolean types as well as breifly discussing tuples. In following chapters we will learn about the others.
+Different data types are useful for different tasks, so it is important to understand how each one works. In this chapter, we will be learning about numberic and Boolean types as well as breifly discussing tuples. In following chapters we will learn about the other data types.
 
 The type of a data object can be found by calling `type()` on it.
 
@@ -216,12 +216,12 @@ There are MANY more functions defined in the `math` module (see exercises).
 
 ## Boolean Type: `bool`
 
-Very simply, in python there are two possible values for a data object that is of type `bool`: `True` and `False`. In lTer chapters we will learn to use boolean values to control the flow of a program.
+Very simply, in python there are two possible values for a data object that is of type `bool`: `True` and `False`. In lTer chapters we will learn to use Boolean values to control the flow of a program.
 
 
 ## Comparison Operators
 
-Comparison operators operate on numbers and return a boolean value.
+Comparison operators operate on numbers and return a Boolean value.
 
 This table summarizes:
 
@@ -237,7 +237,7 @@ This table summarizes:
 
 ## Logical Operators
 
-Logical operators operate on and return boolean values.
+Logical operators operate on and return Boolean values.
 
 This table summarizes:
 
