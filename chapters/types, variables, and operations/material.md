@@ -25,7 +25,7 @@ Before learning more about types, it will be useful to learn about variables.
 
 ## Variables
 
-Variables are used to store data in easy and memorable names. One common style used to name variables is "cammel case", where the first letter of each word (except the first word) is capitalized.
+Variables are used to store data in easily memorable names. One common style used to name variables is "cammel case", where the first letter of each word (except the first word) is capitalized.
 
 The following code uses the `=` assignment operator to set the variable `myFirstVariable` (which is in cammel case) to the integer value `42`.
 
