@@ -4,8 +4,6 @@ This exercise will teach you the process you will go through when you are comple
 
 The process is slightly different for MacOS and Windows users:
 
-## MacOS
-
 1.
  - (MacOS) Open a terminal window and run the line
 ```bash
