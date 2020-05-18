@@ -13,9 +13,9 @@ Git and GitHub repositories are a huge topic, so right now we will just be conce
 
 You will create your own repository that you have acces to edit. You will also be able to see my repository for this course (it's what you are looking at right now!) but you wont be able to make changes to it.
 
-In each chapter folder there is a "material.md" and an "exercises.md" file. As the names would suggest, the "material.md" file contains the information for that chapter, and the "exercises.md" contains the exercises.
+In each chapter folder there is a "readme.md" and an "exercises.md" file. As the names would suggest, the "readme.md" file contains the information for that chapter, and the "exercises.md" contains the exercises.
 
-In "material.md", there will occasionally be links that direct you to another site to do some short reading.
+In "readme.md", there will occasionally be links that direct you to another site to do some short reading.
 
 I denote code and the output of the code like this:
 
