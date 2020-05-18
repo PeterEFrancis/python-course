@@ -15,7 +15,7 @@ You will create your own repository that you have acces to edit. You will also b
 
 In each chapter folder there is a "material.md" and an "exercises.md" file. As the names would suggest, the "material.md" file contains the information for that chapter, and the "exercises.md" contains the exercises.
 
-In "material.md", there will occasionally be links that direct you to anotger site to do some short reading.
+In "material.md", there will occasionally be links that direct you to another site to do some short reading.
 
 I denote code and the output of the code like this:
 
