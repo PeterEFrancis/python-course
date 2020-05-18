@@ -133,8 +133,6 @@ We will revisit `tuple`s in a later chapter, but this is will serve as a short i
 
 For example, `(1, 2.2)` is a valid `tuple`.
 
-One use of a tuple is as the returned value from the function `divmod(x,y)`, which returns the tuple `(x // y, x % y)`.
-
 
 ## Basic Arithmetic Operators
 As you begin to learn python, you can think of it as a glorified calculator (a LOT of glorification).
@@ -150,19 +148,21 @@ Just as you would expect, this bit of code will add 6 and 7:
 
 Here is a chart summarizing some arithmetic operations in python:
 
-| operator           | name                                      | example input          | output |
-|:------------------:|:-----------------------------------------:|:----------------------:|:------:|
-| `+`                | addition                                  | `5+2`                  | `7`    |
-| `-`                | subtraction                               | `5-2`                  | `3`    |
-| `*`                | multiplication                            | `5*2`                  | `10`   |
-| `/`                | division                                  | `5/2`                  | `2.5`  |
-| `%`  	             | Modulus (remainder from division)         | `5 % 2`                | `1`    |
-| `//`               | Floor division                            | `5 // 2`               | `2`    |
-| `**` or `pow(x,y)` | Exponentiation	                           | `5 ** 2` or `pow(5,2)` | `25`   |
-| `abs(x)`           | absolute value                            | `abs(-5)`              | `5`    |
-| `complex(re, im)`  | complex construction (im is 0 by default) | `complex(5,2)`         | `5+2j` |
-| `conjugate()`      | complex conjugate                         | `(5+2j).conjugate()`   | `5-2j` |
+| operator           | name                                      | example input          | output   |
+|:------------------:|:-----------------------------------------:|:----------------------:|:--------:|
+| `+`                | addition                                  | `5+2`                  | `7`      |
+| `-`                | subtraction                               | `5-2`                  | `3`      |
+| `*`                | multiplication                            | `5*2`                  | `10`     |
+| `/`                | division                                  | `5/2`                  | `2.5`    |
+| `%`  	             | modulus (remainder from division)         | `5 % 2`                | `1`      |
+| `//`               | Floor division                            | `5 // 2`               | `2`      |
+| `divmod(x,y)`      | modular division                          | `divmod(5,2)`          | `(2, 1)` |
+| `**` or `pow(x,y)` | exponentiation	                           | `5 ** 2` or `pow(5,2)` | `25`     |
+| `abs(x)`           | absolute value                            | `abs(-5)`              | `5`      |
+| `complex(re, im)`  | complex construction (im is 0 by default) | `complex(5,2)`         | `5+2j`   |
+| `conjugate()`      | complex conjugate                         | `(5+2j).conjugate()`   | `5-2j`   |
 
+(The function `divmod(x,y)` returns the tuple `(x // y, x % y)`).
 
 ## More from the `math` Module
 
