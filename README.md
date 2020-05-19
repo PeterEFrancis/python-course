@@ -6,10 +6,10 @@ Python is a great (first) programming language to learn: it has a simple and clu
 ## Table of Contents
 
 ### Chapters
- - introduction
- - types, variables, and operations
- - strings
- - functions, docstrings
+ 1. introduction
+ 2. types, variables, and operations
+ 3. strings
+ - functions
  - lists and tuples
  - NumPy arrays
  - dictionaries
