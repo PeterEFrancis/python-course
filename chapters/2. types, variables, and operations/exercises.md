@@ -1,5 +1,8 @@
 # Types, Variables, and Operations Exercises
 
+Complete the following exercises in a Jupyter notebook and then push the notebook to the "learning-python" repository in your GitHub account. **Above each exercise, create a markdown cell with an "H3" heading of the number of the exercise.** 
+
+
 1. Use python to calculate the following:
  - the third power of the sum of 15 more than 25 and 7 less than 30, minus the remainder of 6478 divided by 267
  - the fifth root of 34567 (remember that the nth root of a number is the same as the 1/nth power)
