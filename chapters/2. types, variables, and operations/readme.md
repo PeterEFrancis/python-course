@@ -47,6 +47,9 @@ NUMBER_OF_STUDENTS = 10
 
 Although in many cases we will be using single-letter variables to simplify examples, please note that THIS IS NOT GOOD PRACTICE in general. Variable names (like comments) give readers of your code an idea of what is going on!
 
+In python, variables are allowed to be assigned one type, and then later assigned a value of a different type. This is not good practice: ambiguous typing can lead to confusion and errors. (See Appendix for typing in Cython).
+
+
 ## Numeric Types
 
 Numbers in python can be any of 3 types, `int`, `float`, and `complex`.

@@ -2,3 +2,6 @@
 
 
 `is` operator
+
+
+Typing
