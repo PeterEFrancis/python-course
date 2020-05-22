@@ -17,3 +17,7 @@ and
 a, b, c = (1, 2, 3)
 ```
 will set `a = 1`, `b = 2`, and `c = 3`.
+
+
+.join()
+.split()

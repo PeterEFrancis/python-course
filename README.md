@@ -9,8 +9,8 @@ Python is a great (first) programming language to learn: it has a simple and clu
  1. introduction
  2. types, variables, and operations
  3. strings
- - functions
- - lists and tuples
+ 4. functions
+ 5. lists and tuples
  - NumPy arrays
  - dictionaries
  - conditionals
@@ -32,4 +32,4 @@ Python is a great (first) programming language to learn: it has a simple and clu
  - PostgreSQL
 
 
-I would like to acknowledge both https://docs.python.org/ and https://www.w3schools.com/, from whom I have adapted some material.
+I would like to acknowledge both https://docs.python.org/ and https://www.w3schools.com/, from whom I have adapted some material, and Prof. Todd Neller, from whom I have adopted some exercises.

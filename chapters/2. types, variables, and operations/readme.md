@@ -56,7 +56,7 @@ Numbers in python can be any of 3 types, `int`, `float`, and `complex`.
 
  - `int` (integer) is a whole number, positive or negative, of any length.
  - `float` ("floating point number") is a number, positive or negative, that can contain a decimal point.
- - `complex` is a complex number of the form `a + bj`, where `a` and `b` are `float`s or `int`s. Note that instead of `i`, `j` or `J` is used to denote the complex unit; the `j` must be direclty adjacent to a `float` or `int` literal.
+ - `complex` is a complex number of the form `a + bj`, where `a` and `b` are `float`s or `int`s. Note that instead of `i`, `j` or `J` is used to denote the complex unit; the `j` must be directly adjacent to a `float` or `int` literal.
 
 To create a variable of a certain type, just assign that type to the variable.
 
@@ -82,6 +82,14 @@ You can attain (`float`) powers of ten by using `e`. `1.2e3` is the same as `1.2
 ```
 > `1200.0`
 
+Optionally, use underscores to separate numerals for easier visualization (as you would with commas):
+
+```python
+1_200_300
+```
+> `1200300`
+
+
 You can convert from some types to others by using `int()`, `float()`, and `complex()` methods:
 
 The following table shows which numeric types can convert to others:
@@ -93,7 +101,7 @@ The following table shows which numeric types can convert to others:
 |      `complex`       |  no   |   no    |    yes    |
 
 
-Simply put, all numeric types can mutually convert, excpet for `complex` data, which cannot convert to `int` or `float`.
+Simply put, all numeric types can mutually convert, except for `complex` data, which cannot convert to `int` or `float`. Note that converting to an `int` will truncate any decimal.
 
 Here is an example of converting between numeric types.
 
@@ -160,12 +168,16 @@ Here is a chart summarizing some arithmetic operations in python:
 | `%`  	             | modulus (remainder from division)         | `5 % 2`                | `1`      |
 | `//`               | Floor division                            | `5 // 2`               | `2`      |
 | `divmod(x,y)`      | modular division                          | `divmod(5,2)`          | `(2, 1)` |
-| `**` or `pow(x,y)` | exponentiation	                           | `5 ** 2` or `pow(5,2)` | `25`     |
+| `**` or `pow(x,y)` | exponentiation	                         | `5 ** 2` or `pow(5,2)` | `25`     |
 | `abs(x)`           | absolute value                            | `abs(-5)`              | `5`      |
 | `complex(re, im)`  | complex construction (im is 0 by default) | `complex(5,2)`         | `5+2j`   |
 | `conjugate()`      | complex conjugate                         | `(5+2j).conjugate()`   | `5-2j`   |
+| `max(a,b)`         | maximum of `a` and `b`                    | `max(5,2)`             | `5`      |
+| `min(a,b)`         | minimum of `a` and `b`                    | `min(5,2)`             | `2`      |
 
-(The function `divmod(x,y)` returns the tuple `(x // y, x % y)`).
+
+(The function `divmod(x,y)` returns the tuple `(x // y, x % y)`). For right now, just think of functions as things that take inputs and have outputs. We will learn more about them later.
+
 
 ## More from the `math` Module
 

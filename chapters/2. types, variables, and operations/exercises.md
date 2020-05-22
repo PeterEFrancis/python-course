@@ -1,6 +1,6 @@
 # Types, Variables, and Operations Exercises
 
-Complete the following exercises in a Jupyter notebook and then push the notebook to the "learning-python" repository in your GitHub account. **Above each exercise, create a markdown cell with an "H3" heading of the number of the exercise.** 
+Complete the following exercises in a Jupyter notebook and then push the notebook to the "learning-python" repository in your GitHub account. **Above each exercise, create a markdown cell with an "H3" heading of the number of the exercise.**
 
 
 1. Use python to calculate the following:
@@ -26,3 +26,27 @@ Complete the following exercises in a Jupyter notebook and then push the noteboo
 
 
 6. Look online for a table that explains python operator precedence and in a few words, explain what operator precedence is. Then program an expression that uses all of the arithmetic operators discussed in "material.md" and list out the operations in the order that they are executed.
+
+
+7. Write a program that first sets a variable `f` to some `float` (degree Fahrenheit) and then defines a variable `c` that is the equivalent degree in Celsius. In another cell, do the same thing but in reverse.
+
+8. Write a program that calculates the volume and area of a cylinder given its height and radius.
+
+9. Write a program that calculates tip, given the subtotal and gratuity rate. (Remember that there are no fractional pennies!)
+
+10. Suppose you save $100 each month and deposit the money into a savings account with a 3.2% annual interest rate (thus the monthly interest rate is 0.032/12). After the first month the account balance becomes `100 * (1 + (0.032 / 12))`. Write a program that finds the value in the account after 6 months. The ensure that you can change exactly **one** line of your code and find the amount after 6 months if instead you deposit $200 each month.
+
+11. Write a program that finds the area and perimeter of a regular polygon, given the number of sides and the side length.
+
+12. Write a program that, give two integers, displays the quotient and then the remainder of the larger divided by the smaller.
+
+13. `ceil()`, `floor()`, and `round()` are all functions in the `math` module (look them up if you don't know how to use them). Integer *truncation* is just "removing" any decimal part of a number and is done with `int()`.
+Write a program that defines a `float` variable `a` and then tests equality of each of these following pairs (done to `a`):
+- integer truncation and rounding
+- integer truncation and flooring
+- integer truncation and ceiling
+- rounding and flooring
+- rounding and ceiling
+- flooring and ceiling
+
+What is the minimum number of program inputs (different values of `a`) that are necessary to demonstrate difference in output for all of these pairs? 
