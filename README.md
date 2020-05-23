@@ -9,11 +9,11 @@ Python is a great (first) programming language to learn: it has a simple and clu
  1. introduction
  2. types, variables, and operations
  3. strings
- 4. functions
- 5. lists and tuples
+ 4. conditionals
+ - functions
+ - lists and tuples
  - NumPy arrays
  - dictionaries
- - conditionals
  - loops
  - input, output
  - higher order functions

@@ -17,12 +17,22 @@ Complete the following exercises in a Jupyter notebook and then push the noteboo
 
 4. Do some playing around and figure out how `len()` handles the newline character.
 
-<!-- 5. For each string listed below, write a line of python that returns the string using a slice of "abcdefghijklmnopqrstuvwxyz".
+5. Write a line of python that slices "abcdefghijklmnopqrstuvwxyz" to result in...
+- `'bdfhjln'`
+- `'hfd'`
+- `'yvspmj'`
+- `'xr'`
 
--
+6. Learn about the string methods
+- `capitalize()`
+- `center()`
+- `count()`
+- `endswith()`
+- `find()`
+- `index()`
+- `isalnum()`
+- `upper()`
 
-print("abcdefghijklmnopqrstuvwxyz"[1::3]) -->
+from https://www.w3schools.com/python/python_strings.asp. Demonstrate the use of them.
 
-
-
-https://www.w3schools.com/python/python_strings.asp
+6. Write a program that, given a first and last name, generates the "Gettysburg student username" for that person (the first 4 letters of their last name, the first two if their first name, and then 01). What happens if the person's last name is less than 4 characters?

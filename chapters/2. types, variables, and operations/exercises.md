@@ -17,15 +17,15 @@ Complete the following exercises in a Jupyter notebook and then push the noteboo
 5. What python lines, P and Q, would fill in this truth table in order to demonstrate [DeMorgan's Law](https://en.wikipedia.org/wiki/De_Morgan%27s_laws)? **Hint:** DeMorgan's law states that "not (A or B)" is the same as ... check the link.
 
 
-|   `x`  |   `y`  |     P     |    Q     |
-|:------:|:------:|:---------:|:--------:|
-| `True` | `True` |     ?     |    ?     |
-| `True` | `False`|     ?     |    ?     |
-| `False`| `True` |     ?     |    ?     |
-| `False`| `False`|     ?     |    ?     |
+|   `x`  |   `y`  | `P`     | `Q`     | `P === Q` |
+|:------:|:------:|:-------:|:-------:|:---------:|
+| `True` | `True` | `False` | `False` | `True`    |
+| `True` | `False`| `False` | `False` | `True`    |
+| `False`| `True` | `False` | `False` | `True`    |
+| `False`| `False`| `True`  | `True`  | `True`    |
 
 
-6. Look online for a table that explains python operator precedence and in a few words, explain what operator precedence is. Then program an expression that uses all of the arithmetic operators discussed in "material.md" and list out the operations in the order that they are executed.
+6. Look online for a table that explains python operator precedence and in a few words, explain what operator precedence is. Then program an expression that uses all of the arithmetic operators discussed in "readme.md" and list out the operations in the order that they are executed.
 
 7. Write a program that first sets a variable `f` to some `float` (degree Fahrenheit) and then defines a variable `c` that is the equivalent degree in Celsius. In another cell, do the same thing but in reverse. (Bonus: what degree Fahrenheit and Celsius are the same temperature? This is tedious to figure out now, but will become easy in the near future.)
 
@@ -48,4 +48,4 @@ Write a program that defines a `float` variable `a` and then tests equality of e
 - rounding and ceiling
 - flooring and ceiling
 
-What is the minimum number of program inputs (different values of `a`) that are necessary to demonstrate difference in output for all of these pairs?
+**Bonus:** What is the minimum number of times you have to run the program (different values of `a`) so that you can be sure that each pair of actions on `a` don't always give the same result.
