@@ -167,7 +167,7 @@ Here is a chart summarizing some arithmetic operations in python:
 | `/`                | division                                  | `5/2`                  | `2.5`    |
 | `%`  	             | modulus (remainder from division)         | `5 % 2`                | `1`      |
 | `//`               | Floor division                            | `5 // 2`               | `2`      |
-| `divmod(x,y)`      | modular division                          | `divmod(5,2)`          | `(2, 1)` |
+| `divmod(x,y)`      | modular division (quotient)                | `divmod(5,2)`          | `(2, 1)` |
 | `**` or `pow(x,y)` | exponentiation	                         | `5 ** 2` or `pow(5,2)` | `25`     |
 | `abs(x)`           | absolute value                            | `abs(-5)`              | `5`      |
 | `complex(re, im)`  | complex construction (im is 0 by default) | `complex(5,2)`         | `5+2j`   |
