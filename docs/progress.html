@@ -109,19 +109,21 @@
           if (data === '') {
             html += "<td class='active'></td>";
           }
-          else if (data === '0') {
+          else if (Number(data) === 0) {
             html += "<td></td>";
           }
-          else if (data === '1') {
+          else if (Number(data) === 1) {
             html += "<td class='success'></td>";
           }
-          else if (data === '-1') {
+          else if (Number(data) == -1) {
             html += "<td class='warning'></td>";
           }
-          else if (data === '-2') {
+          else if (Number(data) == -2) {
             html += "<td class='danger'></td>";
           }
           else {
+            console.log(data);
+            console.log(data === 0);
             html += "<th>" + data + "</th>";
           }
         });
