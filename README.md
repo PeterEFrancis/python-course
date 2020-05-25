@@ -9,17 +9,20 @@ Python is a great (first) programming language to learn: it has a simple and clu
  1. introduction
  2. types, variables, and operations
  3. strings
- 4. conditionals
- - functions
- - lists and tuples
+ 4. input and output
+ 5. conditionals
+ 6. while
+ 7. lists and tuples
+ 8. for loops
+ 9. functions
  - NumPy arrays
  - dictionaries
- - loops
  - input, output
  - higher order functions
  - generators and lazyness
  - classes
  - exceptions
+
 
 ### Appendices
  - accelerating with numba jit
@@ -30,6 +33,8 @@ Python is a great (first) programming language to learn: it has a simple and clu
  - IPython
  - Flask
  - PostgreSQL
+ - terminal basics [i.e. piping]
+ - binary file handling
 
 
 I would like to acknowledge both https://docs.python.org/ and https://www.w3schools.com/, from whom I have adapted some material, and Prof. Todd Neller, from whom I have adopted some exercises.

@@ -142,7 +142,7 @@ type(x)
 > `<class 'complex'>`
 
 
-**Warning:** You may be tempted to spaces next to the `+` like this `complex("1 + 2j")`. This is not allowed!
+**Warning:** You may be tempted to put spaces next to the `+` like this `complex("1 + 2j")`. This is not allowed!
 
 
 ## Formatting Strings

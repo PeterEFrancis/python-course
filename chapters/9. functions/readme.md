@@ -16,4 +16,9 @@ eval("1 + 2")
 
 typing module
 
+
+
+
 recursion
+
+variable scope

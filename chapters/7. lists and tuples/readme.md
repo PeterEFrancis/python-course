@@ -1,6 +1,6 @@
 `in` operator
 
-auto unpacking
+auto unpacking of lists onto variables
 
 
 It is also possible to use tuples assign multiple variables' values at once. Both
