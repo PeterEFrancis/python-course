@@ -162,7 +162,23 @@ os.remove("deleteMe.txt")
 
 Remove a folder with `os.rmdir()`:
 
-````python
+```python
 import os
 os.rmdir("myFolderToDelete")
 ```
+
+
+You may wish to check to see if a file exists before deleting it. If so, you can use `os.path.exists()`:
+
+```python
+import os
+if os.path.exists("deleteMe.txt"):
+  os.remove("deleteMe.txt")
+else:
+  print("The file does not exist")
+```
+
+
+## More
+
+This is just the beginning of working with files in python. More can be found here https://www.tutorialspoint.com/python/file_seek.htm and in the appendix.

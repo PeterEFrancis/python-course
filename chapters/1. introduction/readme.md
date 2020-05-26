@@ -35,7 +35,7 @@ As a very introductory lesson in python syntax, there are four important takeawa
 
 1. Python can be used as a console: like a fancy calculator, it waits for input and executes the input as it comes. Python can be given large blocks of code to execute together.
 
-2. In python, *indentation* matters. Some other languages use nested braces to destinguish blocks of code, but in python it is only indentation, which helps readability a lot! For example,
+2. In python, *indentation* matters. Some other languages use nested braces to distinguish blocks of code, but in python it is only indentation, which helps readability a lot! For example,
 ```python
 if 3 < 5:
   print("three is less than five")
@@ -60,6 +60,8 @@ print(2)
 > `2`
 >
 > `5`
+
+`print()` can take any number of comma-separated items.
 
 4. When a bit of python is executed (interpreted and run by the computer), we can tell the interpreter to ignore certain lines or bits of code using comments. The symbol to start a comment is `#`, meaning that everything on the line after a `#` symbol is ignored. For example,
 

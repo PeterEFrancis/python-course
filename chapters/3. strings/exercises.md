@@ -31,8 +31,7 @@ Complete the following exercises in a Jupyter notebook and then push the noteboo
 - `find()`
 - `index()`
 - `isalnum()`
-- `upper()`
 
 from https://www.w3schools.com/python/python_strings.asp. Demonstrate the use of them.
 
-6. Write a program that, given a first and last name, generates the "Gettysburg student username" for that person (the first 4 letters of their last name, the first two if their first name, and then 01). What happens if the person's last name is less than 4 characters?
+7. Write a program that, given a first and last name, generates the "Gettysburg student username" for that person (the first 4 letters of their last name, the first two if their first name, and then 01). What happens if the person's last name is less than 4 characters?
