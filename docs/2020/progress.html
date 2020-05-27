@@ -106,7 +106,8 @@
         html += "<tr>";
         var columns = row.split(",");
         columns.forEach( function process_data(data) {
-          if (data === '') {
+          data = "" + data.trim();
+          if (data === "") {
             html += "<td class='active'></td>";
           }
           else if (Number(data) === 0) {
@@ -122,8 +123,6 @@
             html += "<td class='danger'></td>";
           }
           else {
-            console.log(data);
-            console.log(data === 0);
             html += "<th>" + data + "</th>";
           }
         });
