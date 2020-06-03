@@ -26,9 +26,9 @@ you can't ride
 ```
 ```
 enter a height in feet and inches
-feet:  1
+feet:  3
 inches:  6
-you can't ride
+you can ride
 ```
 ```
 enter a height in feet and inches
