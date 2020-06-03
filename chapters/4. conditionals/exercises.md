@@ -278,5 +278,3 @@ hold
 
 
 11. Research how to tell if a file exists: https://www.w3schools.com/python/python_file_remove.asp. Demonstrate this.
-
-12.
