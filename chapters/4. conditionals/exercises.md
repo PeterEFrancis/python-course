@@ -7,10 +7,10 @@ Complete the following exercises in a Jupyter notebook and then push the noteboo
 1. Recreate the behavior of the following `if`-`else` block only using `if` statements. **Hint:** use a boolean flag. A *boolean flag* is a variable that is set to either `True` or `False` during one process in order to be used to determine the behavior of a different process.
 
 ```python
-if 1 > 2:
-  print("1 is greater than 2")
+if "ab" in "abcd":
+  print("foo")
 else:
-  print("1 is less than or equal to 2")
+  print("bar")
 ```
 
 
@@ -220,13 +220,7 @@ year:  2059
 
 The day of the week on January 30, 2059 is Thursday.
 ```
-```
-day of the month:  1
-month:  January
-year:  1600
 
-The day of the week on January 1, 1600 is Wednesday.
-```
 
 
 10. **Pig "Keep Pace and End Race" Advisor**. (From Neller) Pig is a folk jeopardy dice game with simple rules: Two players race to reach 100 points. Each turn, a player repeatedly rolls a die until either a 1 ("pig") is rolled or the player holds and scores the sum of the rolls (i.e. the turn total). At any time during a player's turn, the player is faced with two decisions:
