@@ -167,7 +167,7 @@ Enter a year:  1800
 not a leap year
 ```
 
-9. **Find the day of the week based on the date.** Ask for a date (a month, day of the month, and year). Then display the day of the week, which can be found using the following algorithm. Make sure your program excepts any capitalization.
+9. **Find the day of the week based on the date.** Ask for a date (a month, day of the month, and year). Then display the day of the week, which can be found using the following algorithm created by John Conway. Make sure your program excepts any capitalization.
 
 - First, find the "month code":
 
@@ -230,7 +230,7 @@ The day of the week on January 30, 2059 is Thursday.
   - 2 - 6: the number is added to the player's turn total and the player's turn continues.
 - **hold** - The turn total is added to the player's score and it becomes the opponent's turn.
 
-Given a player's score i, the opponent's score j, and the current turn total k, advise a player to "roll" or "hold" according to this "keep pace and end race" policy:
+Given a player's score i, the opponent's score j, and the current turn total k, advise a player to "roll" or "hold" according to this "keep pace and end race" policy (which is within 1% of optimal play):
 
 - If the player's score i plus the turn total k is greater than or equal to the goal score of 100, hold.
 - Otherwise, if either player has a score greater than or equal to 71, roll.
@@ -270,5 +270,6 @@ Turn total? 23
 hold
 ```
 
+We will be coming back to the game Pig in the future!
 
 11. Research how to tell if a file exists: https://www.w3schools.com/python/python_file_remove.asp. Demonstrate this.
