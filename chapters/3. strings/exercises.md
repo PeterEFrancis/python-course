@@ -24,14 +24,35 @@ Complete the following exercises in a Jupyter notebook and then push the noteboo
 - `'xr'`
 
 6. Learn about the string methods
-- `capitalize()`
-- `center()`
-- `count()`
-- `endswith()`
-- `find()`
-- `index()`
-- `isalnum()`
+- `.capitalize()`
+- `.center()`
+- `.count()`
+- `.endswith()`
+- `.find()`
+- `.index()`
+- `.isalnum()`
 
 from https://www.w3schools.com/python/python_strings.asp. Demonstrate the use of them.
 
 7. Write a program that, given a first and last name, generates the "Gettysburg student username" for that person (the first 4 letters of their last name, the first two if their first name, and then 01). What happens if the person's last name is less than 4 characters?
+
+8. Read about the `.format()` string method here: https://www.w3schools.com/python/ref_string_format.asp. Then print the following line three different ways (using `str()`, `f""`, and `.format()`).
+
+> My name is <name> and I am from <hometown>. I am <age> years old.
+
+Here is starter code:
+
+```python
+name = # your name here
+hometown = # your hometown here
+age = # your age here
+
+# using str()
+print()
+
+# using f""
+print()
+
+# using .format()
+print()
+```
