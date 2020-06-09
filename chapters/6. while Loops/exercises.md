@@ -263,9 +263,15 @@ New Score: 100
 4. **Average Pig Turns** (Neller). What is the expected number of turns per solitaire game with a hold-at-20-or-goal play policy?  Simulate a given number of solitaire Pig games where a player rolls until a 1 ("pig") is rolled, or the turn total is greater than or equal to 20, or the score plus the turn total is greater than or equal to 100.  Report the average number of turns per game. *You'll wan't to copy Exercise "Hold-at-20-or-Goal Game" as a starting point.*
 
 - Initially, prompt the user with "Games? ". (Larger numbers, will tend to yield better estimations.)
-- After the simulations, print "Average turns: " followed by the average turns taken per simulated game.
+- After the simulations, print "Average turns: " followed by the average turns taken per simulated game. **DO NOT PRINT ALL OF THE GAME DATA (roll, player turns)!**
 
-
+Sample Transcript:
+(seed 0)
+```
+Games?  1000
+Average number of turns: 12.631
+```
+**Optional Challenge:** Instead of asking for a number of games, ask for an integer `n` and then calculate the average number of turns to the decimal place `10^(-n)`.
 
 
 5. **Two Player Pig** (Neller). Simulate a single solitaire game of Pig where a player rolls until a 1 ("pig") is rolled, or the turn total is greater than or equal to 20, or the score plus the turn total is greater than or equal to 100. *You'll wan't to copy Exercise "Hold-at-20-or-Goal Game" as a starting point.*
@@ -444,15 +450,20 @@ Player 2 wins!
 6. **First-Player Advantage** (Neller). There is an advantage to going first in Pig, but how big an advantage is it for “hold at 20 or goal” play?  We wish to estimate the probability of a first-player win with a hold-at-20-or-goal play policy.  Simulate a given number of two-player Pig games where a player rolls until a 1 ("pig") is rolled, or the turn total is greater than or equal to 20, or the score plus the turn total is greater than or equal to 100.  Report the fraction of games won by the first player. *You'll wan't to copy Exercise "Two Player Pig" as a starting point.*
 
 - Initially, prompt the user with "Games? ". (Larger numbers, will tend to yield better estimations.)
-- After the simulations, print "Probability of first player win: " followed by the fraction of simulated games won by the first player.
+- After the simulations, print "Probability of first player win: " followed by the fraction of simulated games won by the first player. **DO NOT PRINT ALL OF THE GAME DATA (roll, player turns)!**
 
+Sample Transcript:
 
-
+```
+Games?  10000
+Probability of first player win: 0.5332
+```
 
 7. **The Euclidean Algorithm**. Use the Euclidean Algorithm to find the gcd of two positive integers:
 
 - Prompt the user for two positive integers, `a` and `b` (you can assume that the input is correct).
 - While `b` is not `0`, set `a_prime` to `b` and set `b_prime` to (`a` modulus `b`), where a' and b' are the new values of `a` and `b` for the next iteration.
+- The final value of `a` is the gcd of the two integers.
 
 Sample Transcript:
 ```
