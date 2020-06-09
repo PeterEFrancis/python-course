@@ -223,7 +223,7 @@ The day of the week on January 30, 2059 is Thursday.
 
 
 
-10. **Pig "Keep Pace and End Race" Advisor**. (From Neller) Pig is a folk jeopardy dice game with simple rules: Two players race to reach 100 points. Each turn, a player repeatedly rolls a die until either a 1 ("pig") is rolled or the player holds and scores the sum of the rolls (i.e. the turn total). At any time during a player's turn, the player is faced with two decisions:
+10. **Pig "Keep Pace and End Race" Advisor** (Neller). Pig is a folk jeopardy dice game with simple rules: Two players race to reach 100 points. Each turn, a player repeatedly rolls a die until either a 1 ("pig") is rolled or the player holds and scores the sum of the rolls (i.e. the turn total). At any time during a player's turn, the player is faced with two decisions:
 
 - **roll** - If the player rolls a
   - 1: the player scores nothing and it becomes the opponent's turn.
