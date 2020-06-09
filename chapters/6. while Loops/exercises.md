@@ -115,7 +115,7 @@ Roll: 4
 Roll: 4
 Roll: 1
 Turn total: 0
-New Score: 12
+New Score: 0
 Roll: 3
 Roll: 5
 Roll: 4
@@ -123,11 +123,55 @@ Roll: 4
 Roll: 3
 Roll: 4
 Turn total: 23
-New Score: 116
+New Score: 23
 Roll: 3
 Roll: 5
-Turn total: 8
-New Score: 112
+Roll: 2
+Roll: 5
+Roll: 2
+Roll: 3
+Turn total: 20
+New Score: 43
+Roll: 2
+Roll: 1
+Turn total: 0
+New Score: 43
+Roll: 5
+Roll: 3
+Roll: 5
+Roll: 6
+Roll: 5
+Turn total: 24
+New Score: 67
+Roll: 2
+Roll: 3
+Roll: 1
+Turn total: 0
+New Score: 67
+Roll: 6
+Roll: 1
+Turn total: 0
+New Score: 67
+Roll: 6
+Roll: 3
+Roll: 4
+Roll: 5
+Roll: 1
+Turn total: 0
+New Score: 67
+Roll: 3
+Roll: 4
+Roll: 3
+Roll: 5
+Roll: 6
+Turn total: 21
+New Score: 88
+Roll: 2
+Roll: 5
+Roll: 4
+Roll: 4
+Turn total: 15
+New Score: 103
 ```
 
 Seed 1:
@@ -137,74 +181,82 @@ Roll: 2
 Roll: 5
 Roll: 1
 Turn total: 0
-New Score: 9
+New Score: 0
 Roll: 3
 Roll: 1
 Turn total: 0
-New Score: 12
+New Score: 0
 Roll: 4
 Roll: 4
 Roll: 4
 Roll: 6
 Roll: 4
 Turn total: 22
-New Score: 98
+New Score: 22
 Roll: 2
 Roll: 1
 Turn total: 0
-New Score: 78
+New Score: 22
 Roll: 4
 Roll: 1
 Turn total: 0
-New Score: 82
+New Score: 22
 Roll: 4
 Roll: 4
-Turn total: 8
-New Score: 102
 Roll: 5
-Turn total: 5
-New Score: 104
 Roll: 1
 Turn total: 0
-New Score: 99
+New Score: 22
 Roll: 6
-Turn total: 6
-New Score: 111
-```
-
-Seed 2:
-```
-Roll: 1
-Turn total: 0
-New Score: 0
-Roll: 1
-Turn total: 0
-New Score: 0
-Roll: 1
-Turn total: 0
-New Score: 0
+Roll: 4
 Roll: 3
+Roll: 6
 Roll: 2
-Roll: 6
-Roll: 6
+Turn total: 21
+New Score: 43
+Roll: 5
+Roll: 1
+Turn total: 0
+New Score: 43
 Roll: 3
+Roll: 1
+Turn total: 0
+New Score: 43
+Roll: 1
+Turn total: 0
+New Score: 43
+Roll: 1
+Turn total: 0
+New Score: 43
+Roll: 6
+Roll: 5
+Roll: 1
+Turn total: 0
+New Score: 43
+Roll: 4
+Roll: 6
+Roll: 2
+Roll: 4
+Roll: 6
+Turn total: 22
+New Score: 65
+Roll: 1
+Turn total: 0
+New Score: 65
+Roll: 5
+Roll: 2
+Roll: 4
+Roll: 4
+Roll: 5
 Turn total: 20
-New Score: 76
-Roll: 3
-Roll: 5
+New Score: 85
 Roll: 2
-Roll: 5
-Turn total: 15
-New Score: 107
-Roll: 1
-Turn total: 0
-New Score: 92
-Roll: 5
-Turn total: 5
-New Score: 102
+Roll: 3
+Roll: 2
 Roll: 6
-Turn total: 6
-New Score: 109
+Roll: 2
+Turn total: 15
+New Score: 100
 ```
 
 
