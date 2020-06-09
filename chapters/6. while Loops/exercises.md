@@ -397,7 +397,7 @@ Player 2 wins!
 
 
 
-<!-- 7. **The Euclidean Algorithm**. Use the Euclidean Algorithm to find the gcd of two positive integers:
+7. **The Euclidean Algorithm**. Use the Euclidean Algorithm to find the gcd of two positive integers:
 
 - Prompt the user for two positive integers, `a` and `b` (you can assume that the input is correct).
 - While `b` is not `0`, set `a_prime` to `b` and set `b_prime` to (`a` modulus `b`), where a' and b' are the new values of `a` and `b` for the next iteration.
@@ -409,4 +409,53 @@ Integer b? 2226
 Greatest common divisor of a and b: 42
 ```
 
-8.  -->
+
+8. **Making a Do-While Loop**. In some situations, you know that you are always going to want to execute a while loop's body at least once. In some languages other than python, this calls for a "do-while" loop, which evaluates a conditional expression at the **end** instead of the beginning of the loop. This is *not* python syntax, but if python were to have a do-while loop, it would probably look like this:
+```
+do:
+	CODE_BLOCK_TO
+	EXECUTE_AT
+	LEAST_ONCE
+while CONDITION
+```
+
+Even though python does not have this native capability, it is possible to recreate the same behavior in python using a **boolean flag**. Do so and recreate the following *fake* python do-while loop:
+
+```
+i = int(input("Enter an integer: "))
+do:
+	print(i)
+	i += 1
+while i < 3
+```
+
+Sample Transcripts:
+
+```
+Enter an integer:  -5
+-5
+-4
+-3
+-2
+-1
+0
+1
+2
+```
+
+```
+Enter an integer:  4
+4
+```
+
+```
+Enter an integer:  -5
+-5
+-4
+-3
+-2
+-1
+0
+1
+2
+```
