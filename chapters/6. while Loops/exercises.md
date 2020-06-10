@@ -443,6 +443,8 @@ Roll: 2
 Roll: 5
 Turn total: 18
 New Score: 103
+Player 1 score: 65
+Player 2 score: 103
 Player 2 wins!
 ```
 
