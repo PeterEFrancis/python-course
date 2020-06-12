@@ -85,7 +85,7 @@ Turn total: 12
 New Score: 102
 ```
 
-Seed 42:
+Seed 41:
 ```
 Score?  3
 Roll: 4
