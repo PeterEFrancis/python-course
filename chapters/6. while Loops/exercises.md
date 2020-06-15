@@ -288,7 +288,7 @@ Average number of turns: 12.631
 - After a "pig" roll of 1, or a "hold", print a line with "Turn total: " followed by the turn total.  In the case of a "pig", this turn total is 0.  Then, print a line with "New score: " followed by the new score for the current player.
 - At the end of the game, print the winner.
 
-**Hint:** Have a `current_player` variable whose value changes at the end of each turn (this can be done in one line!). Have a variable `score` that you set at the beginning of a turn, depending on the current player.
+**Hint:** Have a `current_player` variable whose value changes at the end of each turn (this can be done in one line!). Have a variable `current_player_score` that you set at the beginning of a turn, depending on the current player. Here is an analogy that might help you: you have two jars on a shelf, "player 1 beans" and "player 2 beans". At the beginning of a turn, take the beans from the current player's jar and put them in a third jar, off the shelf, "current player score". Then do what you need to with that jar. At the end of the turn, put the (possibly added to) beans back in the correct jar.
 
 Sample transcript:
 (Seed 0)
@@ -617,8 +617,8 @@ Sample Transcript:
 (seed 0)
 
 ```
-Both heads: ***************************
-Both tails: ***********************
+ Both heads: ***************************
+ Both tails: ***********************
 One of each: **************************************************
 ```
 
