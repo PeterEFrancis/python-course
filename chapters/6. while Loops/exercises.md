@@ -56,6 +56,7 @@ Turn total: 22
 
 
 
+
 2. **Hold-at-20-or-Goal Turn** (Neller). Given a player's score, simulate a single turn of Pig where a player rolls until a 1 ("pig") is rolled, or the turn total is greater than or equal to 20, or the score plus the turn total is greater than or equal to 100.
 
 - Initially, prompt the user with "Score? ".
@@ -98,7 +99,13 @@ Turn total: 20
 New Score: 23
 ```
 
-
+Seed 41:
+```
+Score?  96
+Roll: 4
+Turn total: 4
+New Score: 100
+```
 
 
 3. **Hold-at-20-or-Goal Game** (Neller). Simulate a single solitaire game of Pig where a player rolls until a 1 ("pig") is rolled, or the turn total is greater than or equal to 20, or the score plus the turn total is greater than or equal to 100.
@@ -266,7 +273,7 @@ New Score: 100
 - After the simulations, print "Average turns: " followed by the average turns taken per simulated game. **DO NOT PRINT ALL OF THE GAME DATA (roll, player turns)!**
 
 Sample Transcript:
-(seed 0)
+(seed 1)
 ```
 Games?  1000
 Average number of turns: 12.631
@@ -525,4 +532,104 @@ Enter an integer:  -5
 0
 1
 2
+```
+
+
+
+9. **Reverse a number**. Ask for a positive integer with `input()` **and immediately convert it to an `int`**. Then print the reversed number. Do not use string methods to accomplish this! If you are not using floor and modular division, you are probably doing it incorrectly. If your program is longer than *six* lines, try again.
+
+Sample Transcript:
+```
+Enter an positive integer:  12345
+reversed: 54321
+```
+
+> This can also be done simply in one line using string slicing:
+>
+> `print("reversed: " + input("Enter an integer: ")[::-1])`
+
+
+
+10. **Guess a random number**. Generate a random number inclusively between 1 and 10. Then ask for a guess using `input()`. If the answer is correct, print "Correct!". Otherwise, "too high" or "too low" and ask for input again. Keep asking for a guess until the user guesses correctly.
+
+Sample Transcript:
+(seed 0)
+```
+Guess? 1
+too low
+try again: 6
+Correct!
+```
+
+
+
+
+11. **Addition Practice**. Randomly generate 2 integers strictly between 0 and 100 and use `input()` to ask for their sum. Keep asking for the correct sum until the user gets it right.
+
+Sample Transcripts:
+(all seed 0)
+
+```
+49 + 97 =  146
+Correct!
+```
+```
+49 + 97 =  140
+Wrong. Try again: 49 + 97 =  150
+Wrong. Try again: 49 + 97 =  146
+Correct!
+```
+
+
+12. **More Addition Practice**. Copy your code from the previous exercise. When the user gets the right answer, print the number of tries that it took. If the user gets the answer wrong 5 times, print "Nope! You need to study some more!".
+
+**HINT:** Use a `while`-`else`.
+
+Sample Transcripts:
+(all seed 0)
+
+```
+49 + 97 =  146
+Correct in 1 try!
+```
+```
+49 + 97 =  140
+Wrong. Try again: 49 + 97 =  150
+Wrong. Try again: 49 + 97 =  146
+Correct in 3 tries!
+```
+```
+49 + 97 =  0
+Wrong. Try again: 49 + 97 =  0
+Wrong. Try again: 49 + 97 =  0
+Wrong. Try again: 49 + 97 =  0
+Wrong. Try again: 49 + 97 =  0
+Nope! You need to study some more!
+```
+
+
+13. **Coin Probabilities***. Simulate flipping two coins, 100 times. After the flips are done, display a histogram using asterisks of the number of turns where
+	- both flips were heads
+	- both flips were tails
+	- one flip was heads and one was tails
+
+Sample Transcript:
+(seed 0)
+
+```
+Both heads: ***************************
+Both tails: ***********************
+One of each: **************************************************
+```
+
+
+14. **More Coin Probabilities**. The probabilities above should come to 25%, 25% and 50%. Copy your code from above and edit it so after 100 flips, you continue flipping until your data reflects these probabilities. You may want to scale the asterisks printing by 1/5th.
+
+Sample Transcript:
+(seed 0)
+
+```
+ Both heads: *****************
+ Both tails: *****************
+One of each: **************************************
 ```

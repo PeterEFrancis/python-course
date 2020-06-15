@@ -1,7 +1,12 @@
 deMorgons law
 
+factorial
 
 
+
+@lru caching
+
+fibbonacci
 
 
 

@@ -5,3 +5,8 @@ myFloat() ?
 magic square
 
 divisors
+
+prime numbers
+
+
+pallendrome strings
