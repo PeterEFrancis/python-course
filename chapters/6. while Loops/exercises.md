@@ -608,7 +608,7 @@ Nope! You need to study some more!
 ```
 
 
-13. **Coin Probabilities***. Simulate flipping two coins, 100 times. After the flips are done, display a histogram using asterisks of the number of turns where
+13. **Coin Probabilities**. Simulate flipping two coins, 100 times. After the flips are done, display a histogram using asterisks of the number of turns where
 	- both flips were heads
 	- both flips were tails
 	- one flip was heads and one was tails
