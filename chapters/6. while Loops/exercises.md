@@ -550,7 +550,7 @@ reversed: 54321
 
 
 
-10. **Guess a random number**. Generate a random number inclusively between 1 and 10. Then ask for a guess using `input()`. If the answer is correct, print "Correct!". Otherwise, "too high" or "too low" and ask for input again. Keep asking for a guess until the user guesses correctly.
+10. **Guess a random number**. Generate a random number inclusively between 0 and 10. Then ask for a guess using `input()`. If the answer is correct, print "Correct!". Otherwise, "too high" or "too low" and ask for input again. Keep asking for a guess until the user guesses correctly.
 
 Sample Transcript:
 (seed 0)
