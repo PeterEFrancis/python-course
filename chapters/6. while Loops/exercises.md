@@ -623,13 +623,15 @@ One of each: **************************************************
 ```
 
 
-14. **More Coin Probabilities**. The probabilities above should come to 25%, 25% and 50%. Copy your code from above and edit it so after 100 flips, you continue flipping until your data reflects these probabilities. You may want to scale the asterisks printing by 1/5th.
+14. **More Coin Probabilities**. The probabilities above should come to 25%, 25% and 50%. Copy your code from above and edit it so after 100 flips, you continue flipping until your data reflects these probabilities. You may want to scale the asterisks printing by 1/20th.
 
 Sample Transcript:
 (seed 0)
 
 ```
- Both heads: *****************
- Both tails: *****************
-One of each: **************************************
+ Both heads: ***********************************
+ Both tails: ***********************************
+One of each: ***********************************************************************
+
+Number of flips needed: 2860
 ```
