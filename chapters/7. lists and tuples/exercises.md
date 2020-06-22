@@ -1,4 +1,4 @@
-create student ids list and check for pre-containment
+<!-- create student ids list and check for pre-containment -->
 
 
 <!--
@@ -20,4 +20,4 @@ create student ids list and check for pre-containment
  -->
 
 
-text based chomp
+<!-- text based chomp -->
