@@ -23,7 +23,7 @@
 
 4. **More Gettysburg Student Usernames**. In Chapter 3, we created Gettysburg Student usernames, given a first and last name (first four characters of last name + first two characters of first name + #). In this exercise, you will do the same, but this time, create a list of usernames that you have already created. Just as at Gettysburg, when creating a new username, check that the one you are about to create does not already exist. While it does, increment the last two digits.
 
-5. **Nested Tuples**. Ask the user for a non-negative integer. Then print an n-length tuple, where the ith entry contains an i-length tuple with the same property. This can **and should** be done in exactly 5 lines. If your code is longer, try again.
+5. **Nested Tuples**. Ask the user for a non-negative integer. Then print an n-length tuple, where the ith entry contains an i-length tuple with the same property. This can **and should** be done in exactly 5 lines (with only the use of topics we have covered already---no functions, lambdas, or for loops). If your code is longer, try again.
 
 	Sample Transcripts:
 	```
