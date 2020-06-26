@@ -381,7 +381,7 @@
 	Usernames: ['franpe01', 'franpe02', 'franpe03']
 	```
 
-5. **Nested Tuples**. Ask the user for a non-negative integer. Then print an n-length tuple, where the ith entry has contains an i-length tuple with the same property. This can **and should** be done in exactly 5 lines. If your code is longer, try again.
+5. **Nested Tuples**. Ask the user for a non-negative integer. Then print an n-length tuple, where the ith entry contains an i-length tuple with the same property. This can **and should** be done in exactly 5 lines (with only the use of topics we have covered already---no functions, lambdas, or for loops). If your code is longer, try again.
 
 	Sample Transcripts:
 	```
