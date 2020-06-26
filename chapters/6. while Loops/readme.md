@@ -211,3 +211,26 @@ while i < 5:
 ```
 
 During the iteration of the loop when `i` is `3`, `continue` is called, so the loop moves to the next iteration, but `i` is still `3`. Since `i` is never incremented, `i < 5` will never be `False`, so the loop will continue indefinitely.
+
+
+## A Word of Caution
+
+A common beginner's mistake is to initialize loops in incorrect places. This is especially tragic with nested loops. Note that
+
+```
+<initialize 1>
+<initialize 2>
+
+<loop 1>
+	<loop2>
+```
+
+is very different from
+
+```
+<initialize 1>
+<loop 1>
+
+	<initialize 2>
+	<loop2>
+```

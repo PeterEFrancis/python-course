@@ -3,5 +3,6 @@
 
 `is` operator
 
+id()
 
 Typing

@@ -50,6 +50,6 @@ for _ in range(5):
 
 To clear the current seed, call `random.seed()` (with no argument).
 
-
+In many of my Exercise "Sample Transcripts", I note that a specific seed was used. In each case, I set the seed right after importing the random module in the cell in which I am completing the exercise.
 
 More information: https://www.w3schools.com/python/module_random.asp
