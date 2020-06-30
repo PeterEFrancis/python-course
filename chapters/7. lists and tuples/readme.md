@@ -271,7 +271,7 @@ print(a * 3)
 ```
 > `[1, 2, 3, 4, 5, 6]`
 >
-> `[4, 5, 6, 4, 5, 6, 4, 5, 6]`
+> `[1, 2, 3, 1, 2, 3, 1, 2, 3]`
 
 The `+` operator returns a new list/tuple that is the concatenation of of the two provided, and `*` returns a new list/tuple that is made of a given number of copies of the list/tuple provided.
 

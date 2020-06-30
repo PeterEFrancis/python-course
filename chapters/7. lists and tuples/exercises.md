@@ -209,6 +209,7 @@
  **NOTE:** It should not be difficult at all to modify your code to play `k`-pile Nim. In fact, you can write your program generally, so that any number of pile-size inputs can be given.
 
 	Sample Transcript:
+
 	```
 	Enter pile sizes: 1 2 3
 	0: *
@@ -238,131 +239,81 @@
 
 3. **Chomp**. Chomp is a two-player Nim game, where players alternate taking "bites" out of a rectangular cookie made up of smaller cookie squares. When a player bites a square, they also eat all of the cookie squares that are to the right and below. The player that eats the top left square loses. You can play online [here](https://peterefrancis.com/canvas-games/chomp/).
 
- In this exercise, you will implement a game of chomp between two human players. First ask the user to input the desired dimensions of the board. Then, alternate asking player 1 and 2 for their move (row & col) until one player eats the top left cookie. Each turn, print the board using octothorps (`#`) for remaining cookie squares, and print numbers along the top and left side of the board, showing the row and column numbers. At the end of the game, report the winning player. You may assume that all plays are valid.
+   In this exercise, you will implement a game of chomp between two human players. First ask the user to input the desired dimensions of the board. Then, alternate asking player 1 and 2 for their move (row & col) until one player eats the top left cookie. Each turn, print the board using octothorps (`#`) for remaining cookie squares, and print numbers along the top and left side of the board, showing the row and column numbers. At the end of the game, report the winning player. You may assume that all plays are valid.
 
-	Sample transcript:
+ Sample transcript:
+
 	```
-	Enter # of rows and cols: 12 12
+    Enter # of rows and cols: 12 12
 
-	    0  1  2  3  4  5  6  7  8  9  10 11
-	 0  #  #  #  #  #  #  #  #  #  #  #  #
-	 1  #  #  #  #  #  #  #  #  #  #  #  #
-	 2  #  #  #  #  #  #  #  #  #  #  #  #
-	 3  #  #  #  #  #  #  #  #  #  #  #  #
-	 4  #  #  #  #  #  #  #  #  #  #  #  #
-	 5  #  #  #  #  #  #  #  #  #  #  #  #
-	 6  #  #  #  #  #  #  #  #  #  #  #  #
-	 7  #  #  #  #  #  #  #  #  #  #  #  #
-	 8  #  #  #  #  #  #  #  #  #  #  #  #
-	 9  #  #  #  #  #  #  #  #  #  #  #  #
-	 10 #  #  #  #  #  #  #  #  #  #  #  #
-	 11 #  #  #  #  #  #  #  #  #  #  #  #
+         0   1   2   3   4   5   6   7   8   9   10  11
+     0   #   #   #   #   #   #   #   #   #   #   #   #  
+     1   #   #   #   #   #   #   #   #   #   #   #   #  
+     2   #   #   #   #   #   #   #   #   #   #   #   #  
+     3   #   #   #   #   #   #   #   #   #   #   #   #  
+     4   #   #   #   #   #   #   #   #   #   #   #   #  
+     5   #   #   #   #   #   #   #   #   #   #   #   #  
+     6   #   #   #   #   #   #   #   #   #   #   #   #  
+     7   #   #   #   #   #   #   #   #   #   #   #   #  
+     8   #   #   #   #   #   #   #   #   #   #   #   #  
+     9   #   #   #   #   #   #   #   #   #   #   #   #  
+     10  #   #   #   #   #   #   #   #   #   #   #   #  
+     11  #   #   #   #   #   #   #   #   #   #   #   #  
 
-	It is Player 1's turn
-	Enter row and column to chomp: 5 5
+    It is Player 1's turn
+    Enter row and column to chomp: 3 3
 
-	    0  1  2  3  4  5  6  7  8  9  10 11
-	 0  #  #  #  #  #  #  #  #  #  #  #  #
-	 1  #  #  #  #  #  #  #  #  #  #  #  #
-	 2  #  #  #  #  #  #  #  #  #  #  #  #
-	 3  #  #  #  #  #  #  #  #  #  #  #  #
-	 4  #  #  #  #  #  #  #  #  #  #  #  #
-	 5  #  #  #  #  #
-	 6  #  #  #  #  #
-	 7  #  #  #  #  #
-	 8  #  #  #  #  #
-	 9  #  #  #  #  #
-	 10 #  #  #  #  #
-	 11 #  #  #  #  #
+         0   1   2   3   4   5   6   7   8   9   10  11
+     0   #   #   #   #   #   #   #   #   #   #   #   #  
+     1   #   #   #   #   #   #   #   #   #   #   #   #  
+     2   #   #   #   #   #   #   #   #   #   #   #   #  
+     3   #   #   #  
+     4   #   #   #  
+     5   #   #   #  
+     6   #   #   #  
+     7   #   #   #  
+     8   #   #   #  
+     9   #   #   #  
+     10  #   #   #  
+     11  #   #   #  
 
-	It is Player 2's turn
-	Enter row and column to chomp: 7 1
+    It is Player 2's turn
+    Enter row and column to chomp: 0 1
 
-	    0  1  2  3  4  5  6  7  8  9  10 11
-	 0  #  #  #  #  #  #  #  #  #  #  #  #
-	 1  #  #  #  #  #  #  #  #  #  #  #  #
-	 2  #  #  #  #  #  #  #  #  #  #  #  #
-	 3  #  #  #  #  #  #  #  #  #  #  #  #
-	 4  #  #  #  #  #  #  #  #  #  #  #  #
-	 5  #  #  #  #  #
-	 6  #  #  #  #  #
-	 7  #
-	 8  #
-	 9  #
-	 10 #
-	 11 #
+         0   1   2   3   4   5   6   7   8   9   10  11
+     0   #  
+     1   #  
+     2   #  
+     3   #  
+     4   #  
+     5   #  
+     6   #  
+     7   #  
+     8   #  
+     9   #  
+     10  #  
+     11  #  
 
-	It is Player 1's turn
-	Enter row and column to chomp: 1 7
+    It is Player 1's turn
+    Enter row and column to chomp: 2 0
 
-	    0  1  2  3  4  5  6  7  8  9  10 11
-	 0  #  #  #  #  #  #  #  #  #  #  #  #
-	 1  #  #  #  #  #  #  #
-	 2  #  #  #  #  #  #  #
-	 3  #  #  #  #  #  #  #
-	 4  #  #  #  #  #  #  #
-	 5  #  #  #  #  #
-	 6  #  #  #  #  #
-	 7  #
-	 8  #
-	 9  #
-	 10 #
-	 11 #
+         0   1   2   3   4   5   6   7   8   9   10  11
+     0   #  
+     1   #  
+     2  
+     3  
+     4  
+     5  
+     6  
+     7  
+     8  
+     9  
+     10
+     11
 
-	It is Player 2's turn
-	Enter row and column to chomp: 3 3
-
-	    0  1  2  3  4  5  6  7  8  9  10 11
-	 0  #  #  #  #  #  #  #  #  #  #  #  #
-	 1  #  #  #  #  #  #  #
-	 2  #  #  #  #  #  #  #
-	 3  #  #  #
-	 4  #  #  #
-	 5  #  #  #
-	 6  #  #  #
-	 7  #
-	 8  #
-	 9  #
-	 10 #
-	 11 #
-
-	It is Player 1's turn
-	Enter row and column to chomp: 0 1
-
-	    0  1  2  3  4  5  6  7  8  9  10 11
-	 0  #
-	 1  #
-	 2  #
-	 3  #
-	 4  #
-	 5  #
-	 6  #
-	 7  #
-	 8  #
-	 9  #
-	 10 #
-	 11 #
-
-	It is Player 2's turn
-	Enter row and column to chomp: 1 0
-
-	    0  1  2  3  4  5  6  7  8  9  10 11
-	 0  #
-	 1
-	 2
-	 3
-	 4
-	 5
-	 6
-	 7
-	 8
-	 9
-	 10
-	 11
-
-	It is Player 1's turn
-	Enter row and column to chomp: 0 0
-	Player 2 wins!
+    It is Player 2's turn
+    Enter row and column to chomp: 0 0
+    Player 1 wins!
 	```
 
 
@@ -400,3 +351,47 @@
 	Enter a non-negative integer: 3
 	((), ((),), ((), ((),)))
 	```
+
+6. **Creating copy()**. Write a program that defines a list `a` of integers, and then safely copies `a` into a new array `b`. Do not use `copy()`. The following outline should be tested:
+
+	```python
+	a = [1, 2, 3, 4, 5]
+
+	# YOUR CODE HERE TO COPY `a` into `b`
+
+	a[0] = 100
+	print(b)
+	```
+	> `[1, 2, 3, 4, 5]`
+
+
+7. **Flattening a list of lists**. Define a list of lists of lists ... of lists `a`. Then, create and print a list that contains all of the contents of all of the inner lists of lists ... of lists.
+
+	Outline:
+
+	```python
+	a = [1, 2, [3, 4, [5, 6], 7], [8, 9, [10, 11]], 12]
+
+	# YOUR CODE HERE TO CREATE `b`
+
+	print(b)
+	```
+	> `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]`
+
+8. **Shuffling Arrays**. Define a list of integers. Then
+ - write a program to create a new array that has been shuffled by randomly accessing the elements from the first array,
+ - use the [Fisher Yates Shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) to shuffle the list in place,
+ - use the `random.shuffle()`
+
+9. **Reverse a list**. Define a list `a`. Then create a list `b` so that `a[::-1] == b`. (Do this without using `[::-1]`).
+
+	Outline:
+
+	```python
+	a = [1, 2, 3, 4, 5, 6, 7, 8]
+
+	# YOUR CODE HERE TO CREATE `b`
+
+	print(b)
+	```
+	>`[8, 7, 6, 5, 4, 3, 2, 1]`

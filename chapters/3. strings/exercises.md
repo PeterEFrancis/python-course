@@ -38,7 +38,7 @@ from https://www.w3schools.com/python/python_strings.asp. Demonstrate the use of
 
 8. Read about the `.format()` string method here: https://www.w3schools.com/python/ref_string_format.asp. Then print the following line three different ways (using `str()`, `f""`, and `.format()`).
 
-> My name is <name> and I am from <hometown>. I am <age> years old.
+> My name is \<name\> and I am from \<hometown\>. I am \<age\> years old.
 
 Here is starter code:
 

@@ -1,4 +1,4 @@
-global variables, eval https://docs.python.org/2/library/functions.html#eval
+<!-- global variables, eval https://docs.python.org/2/library/functions.html#eval
 
 
 ## `eval()`
@@ -37,4 +37,4 @@ and
 ```python
 a, b, c = (1, 2, 3)
 ```
-will set `a = 1`, `b = 2`, and `c = 3`.
+will set `a = 1`, `b = 2`, and `c = 3`. -->
