@@ -395,3 +395,16 @@
 	print(b)
 	```
 	>`[8, 7, 6, 5, 4, 3, 2, 1]`
+
+10. **Pharoh Shuffle**. Define a list `a` (of even length) and then write a program to interlace the first half of `a` with the second half into a new list `b`.
+    Outline:
+
+	```python
+	a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+	# YOUR CODE HERE TO CREATE `b`
+
+	print(b)
+	```
+	>`[1, 6, 2, 7, 3, 8, 4, 9, 5, 10]`
+    
