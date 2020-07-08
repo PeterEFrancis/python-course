@@ -154,7 +154,7 @@ As stated before, `for` loops are generally used when the number of iterations i
 
 ```python
 a = [1, 2, 3, 4]
-for i in a;
+for i in a;:
 	print(i)
 	a.append(i)
 ```
@@ -172,7 +172,7 @@ You may expect this code to print only four lines, but since we are adding to th
 As you can see, while there is a next element of `a`, the loop will continue, and since we always add another element to `a`, the loop will never terminate. (This can also happen with a while loop).
 
 
-## `break`, `continue`, and else
+## `break`, `continue`, and `else`
 
 Here's a short section for you (because these three keywords work just the same as with `while` loops.
 

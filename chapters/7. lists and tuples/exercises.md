@@ -378,10 +378,10 @@
 	```
 	> `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]`
 
-8. **Shuffling Arrays**. Define a list of integers. Then
- - write a program to create a new array that has been shuffled by randomly accessing the elements from the first array,
- - use the [Fisher Yates Shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) to shuffle the list in place,
- - use the `random.shuffle()`
+8. **Shuffling Arrays**. Define a list of integers `a`. Then
+ 1. write a program to create a new array that has been shuffled by randomly accessing (and removing) the elements from `a`,
+ 2. use the [Fisher Yates Shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) to shuffle `a` in-place,
+ 3. use the `random.shuffle()` to shuffle `a` in-place
 
 9. **Reverse a list**. Define a list `a`. Then create a list `b` so that `a[::-1] == b`. (Do this without using `[::-1]`).
 
@@ -408,3 +408,4 @@
 	```
 	>`[1, 6, 2, 7, 3, 8, 4, 9, 5, 10]`
     
+    **Challenge:** starting with a list of 52 elements, how many times does this operation need to be done in order to return to the original list?
