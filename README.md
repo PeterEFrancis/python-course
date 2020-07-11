@@ -17,7 +17,7 @@ Python is a great (first) programming language to learn: it has a simple and clu
  9. functions
  - dictionaries
  - higher order functions
- - generators and lazyness
+ - generators
  - classes
  - exceptions
 
