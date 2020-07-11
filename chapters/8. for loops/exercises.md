@@ -37,15 +37,15 @@
 
 5. **String Palindromes.** Ask for a string `s`. Then print whether `s` is a palindrome. If `s` is not a palindrome, print the palindrome that has `s` as a base. For example, if `s` is `'race'`, the new palindrome that should be printed is `'racecar'`.
 
-Sample Transcript:
-```
-Enter a string: race
-'race' not a palindrome but 'racecar' is
-```
-```
-Enter a string: racecar
-'racecar' is a palindrome
-```
+	Sample Transcript:
+	```
+	Enter a string: race
+	'race' not a palindrome but 'racecar' is
+	```
+	```
+	Enter a string: racecar
+	'racecar' is a palindrome
+	```
 
 6. **Magic Square**. Ask the user for an odd positive integer `n` at least 3, and then print the [Magic Square](https://en.wikipedia.org/wiki/Magic_square) of size `n`.
 
@@ -75,13 +75,13 @@ Enter a string: racecar
 	8  1  6
 	```
 
+7. **Fibbonacci**. Print the first 200 Fibonnacci numbers, starting at 1, 2, 3,.... This can be done in 4 lines (64 characters to be exact) *and should take no more than a second of computation time*.
 
 
+8. **Tables Tables Tables**. One of the many uses python tends to serve is that of data processing, and string formatting. In this exercise, you will learn how to load data from a csv file and print the markup code necessary to print the data as a table in one of three popular languages.
 
-<!-- make myInt() that takes a string and returns a integer
+	Look up the way that either an HTML, a LaTeX, or a MarkDown Table is formatted (pick one). Then, use the `readline()` function (look it up) to open the file "iris.csv" and print either the HTML, LaTeX, or MarkDown code necessary to print the data as a table in one of those languages.
 
-myFloat() ?
+	There are many ways to do this, but one would be to first load in the data and save it in a two dimensional array and then do all of the printing. (As an extra challenge, you can try to print in more than one of the languages and print both "minified" and "beautified" versions of the table code).
 
-Write a program that reads in a csv file and prints the necessary latex (or markdown) text
-
--->
+	By hand, this would be a tedious task. Hopefully, you see the benefit of using Python.

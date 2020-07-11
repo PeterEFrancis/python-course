@@ -222,19 +222,146 @@ else:
 > `I didn't break`
 
 
-## List Comprehension
-
-coming soon
-
-<!-- `"".join()` -->
-
 
 ## `enumerate` and `zip`
 
-coming soon
+`enumerate()` and `zip()` are both functions that return a list of tuples. This is often useful for looping through two or more iterators at once.
+
+`zip()` takes as arguments and number of iterables and returns a `zip` object of tuples, where the nth (zero-based) tuple consists of the nth elements of each of the iterables passed. If the iterables are of different length, the shortest iterable passed will determine the number of tuples returned. We will learn more about how this works internally in a later chapter. For now, we can call `list()` on the zip object return to see what it generates. Here is an example:
+
+```python
+list(zip("abcd", [1, 2, 3, 4], ('i', 'ii', 'iii')))
+```
+> `[('a', 1, 'i'), ('b', 2, 'ii'), ('c', 3, 'iii')]`
+
+As you can see, only three tuples are returned since the third iterable passed to `zip()` only contains three elements.
+
+`enumerate()` is very similar to `zip()`: it takes one iterable object and optionally a starting number (default is 0). Then `enumerate()` returns an `enumerate` iterable object that dispenses tuples, where the nth tuple (zero-based) consists of the nth integer after the starting number, and the nth element of the iterable passed. You can think of `enumerate()` begin a more specific case of `zip()`, since `zip(range(s), iterable)` will serve just the same as `enumerate(iterable, start=s)`.
+
+Here are two examples:
+
+```python
+list(enumerate("asdfg"))
+```
+> `[(0, 'a'), (1, 's'), (2, 'd'), (3, 'f'), (4, 'g')]`
+
+```python
+list(enumerate("asdfg", start=3))
+```
+> `[(3, 'a'), (4, 's'), (5, 'd'), (6, 'f'), (7, 'g')]`
 
 
-<!--
-readline()
+`zip()` and enumerate lend themselves nicely to python `for` loops because (as discussed in a previous chapter). python supports auto-packing and unpacking of tuples and lists, as well as multiple variable assignment. This means that when using a `for` loop to iterate over a `zip` object, you can either take the tuple of arguments as your loop variable, or you can define multiple loop variables at the same time:
 
-enumerate -->
+```python
+for a, b in zip("123", "678"):
+	print(f"a={a} b={b}")
+```
+> `a=1 b=6`
+>
+> `a=2 b=7`
+>
+> `a=3 b=8`
+
+
+```python
+for c in zip("123", "678"):
+	print(c)
+```
+> `(1, 6)`
+>
+> `(2, 7)`
+>
+> `(3, 8)`
+
+
+It is remarkable that you can use a starred expression in order to unpack and then repack the contents of a tuple:
+
+```python
+for a, *bc in zip("asdf","asdf", "asdf"):
+    print(a, bc)
+```
+> `a ['a', 'a']`
+>
+> `s ['s', 's']`
+>
+> `d ['d', 'd']`
+>
+> `f ['f', 'f']`
+
+In this last example, the starred expression is used to indicate that `bc` should be a list that will comprise of the remaining elements that are unpacked as a comma-separated sequence.
+
+
+## List Comprehension
+
+Much of the ease of python comes from the capability of doing things in one line that other languages would require multiple statements to complete. You have already seen one-line (ternary) `if`-`else` statements, and in this section, we will take a look at how python uses one-line `for` loops to accomplish this capability.
+
+With *List Comprehension*, you can *safely* populate a list in one line! The notation looks similar to a `for` loop (and reads in English as you would imagine it to behave). Each element of the list is generated one by one. Here is a simple example where we generate a list of ten zeros:
+
+```python
+[0 for i in range(10)]
+```
+> `[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]`
+
+The code to the left of `for` is executed every "loop" to create the next element of the list, while the code to the right determines the loop behavior.
+
+**Note:** It is a common practice to name the loop variable (`i` in this case) just and underscore `_` if the variable is not being used in the loop.
+
+In this example, we create a list of the non-negative perfect squares less than 100:
+
+```python
+[i ** 2 for i in range(10)]
+```
+> `[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]`
+
+
+As stated before, this method of generating a list is safe because each element of the list is created individually, one at a time. Consider the two following ways to make a list of 5 lists containing 0:
+
+```python
+# create the lists
+a = [[0]] * 5
+b = [[0] for _ in range(5)]
+
+# edit the first element of each list
+a[0][0] = 1
+b[0][0] = 1
+
+# print the lists
+print(a)
+print(b)
+```
+> `[[1], [1], [1], [1], [1]]`
+>
+> `[[1], [0], [0], [0], [0]]`
+
+You can see how the elements of `a` are all the same object, so all get changed together, while the elements of `b` are independent, so do not all get changed.
+
+List comprehension can be used with an `if` statement to filter items from the list:
+
+```python
+[i ** 2 for i in range(10) if i % 2 == 0]
+```
+> `[0, 4, 16, 36, 64]`
+
+You can also use a one-line `if`-`else` to determine the element that is generated.
+
+```python
+[i ** 2 if i % 2 == 0 else i ** 3 for i in range(10)]
+```
+> `[0, 1, 4, 27, 16, 125, 36, 343, 64, 729]`
+
+Nested `for` loops can also be used in list comprehension:
+
+```python
+[(i, j) for j in range(2) for i in range(4)]
+```
+> `[(0, 0), (1, 0), (2, 0), (3, 0), (0, 1), (1, 1), (2, 1), (3, 1)]`
+
+By examining the order of the tuples in the list above, you can see that the loop to the far right is the "outer" loop and the nesting continues left.
+
+As the last example shows, you can reference the loop variable anywhere to the left of where it was defined. One loop variable can even be used in defining the loop behavior of the next:
+
+```python
+[[i + 1 for i in range(j + 1)] for j in range(5)]
+```
+> `[[1], [1, 2], [1, 2, 3], [1, 2, 3, 4], [1, 2, 3, 4, 5]]`
