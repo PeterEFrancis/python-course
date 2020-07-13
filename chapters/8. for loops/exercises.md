@@ -1,7 +1,7 @@
 
 # `for` loop Exercises
 
-1. **Divisors**. Ask the user for an integer `n` and then print a list of all of the positive divisors of that integer.
+1. **Divisors**. Ask the user for a non-negative integer `n` and then print a list of all of the positive divisors of that integer.
 
 	Sample Transcripts:
 
@@ -35,7 +35,7 @@
 
 4. **Min, Max, Sum, and Product.** Define a list `a` of `float`s (and/or `int`s). Then print the minimum, maximum, sum, and product of `a` without using `min()`, `max()`, or `sum()`.
 
-5. **String Palindromes.** Ask for a string `s`. Then print whether `s` is a palindrome. If `s` is not a palindrome, print the palindrome that has `s` as a base. For example, if `s` is `'race'`, the new palindrome that should be printed is `'racecar'`.
+5. **String Palindromes.** Ask for a string `s`. Then use `zip()` and a for loop to print whether `s` is a palindrome. If `s` is not a palindrome, print the palindrome that has `s` as a base. For example, if `s` is `'race'`, the new palindrome that should be printed is `'racecar'`.
 
 	Sample Transcript:
 	```
