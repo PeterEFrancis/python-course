@@ -2,20 +2,19 @@
 
 This exercise will teach you the process you will go through when you are completing any other set of exercises. You will do this once per chapter and it might seem tedious at first, but you will get used to it and soon it will be fun!
 
-The process is slightly different for MacOS and Windows users:
 
-1.
- - (MacOS) Open a terminal window and run the line
-```bash
-jupyter notebook
-```
-This will start a local server on your computer and load a webpage at something like "http://localhost:8891/tree". This webpage is just a fancy file browser in your web browser. Click "Programming" and then click "learning-python".
- - (Windows)
-Open PyCharm and open the "learning-python" project. Click the "Terminal" button on the bottom left of the window and type
-```bash
-jupyter notebook
-```
-Copy and paste the link that is generated into a browser. This page is a file browser.
+1. The process is slightly different for MacOS and Windows users:
+  - (MacOS) Open a terminal window and run the line
+    ```bash
+    jupyter notebook
+    ```
+    This will start a local server on your computer and load a webpage at something like "http://localhost:8891/tree". This webpage is just a fancy file browser in your web browser. Click "Programming" and then click "learning-python".
+  - (Windows)
+    Open PyCharm and open the "learning-python" project. Click the "Terminal" button on the bottom left of the window and type
+    ```bash
+    jupyter notebook
+    ```
+    Copy and paste the link that is generated into a browser. This page is a file browser.
 
 2. Click the "New" dropdown button and select "Python 3". This will create a new jupyter notebook.
 3. Rename this notebook with the title of the chapter that the exercises are for by clicking the current name. In this case, name the notebook "introduction".
@@ -26,11 +25,11 @@ Copy and paste the link that is generated into a browser. This page is a file br
 5. Execute the cell to render the markdown by pressing "shift + enter" ("shift + return" on mac) or clicking the "Run" button.
 6. Make sure that the next cell is a code cell by inspecting the drop down.
 7. Type the following and execute the cell
-```python
-print("Hello, World!")
-```
-You should see an output:
-> `Hello, World!`
+  ```python
+  print("Hello, World!")
+  ```
+  You should see an output:
+  > `Hello, World!`
 
 8. In the next cell, copy what you had in the previous cell and paste it three times.
 9. Replace the "Hello, World!" text with something else (you could write a haiku!).
