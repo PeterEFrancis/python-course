@@ -1,4 +1,4 @@
-# Introduction Exercises
+# Introduction Exercises (Jupyter and GitHub)
 
 This exercise will teach you the process you will go through when you are completing any other set of exercises. You will do this once per chapter and it might seem tedious at first, but you will get used to it and soon it will be fun!
 
