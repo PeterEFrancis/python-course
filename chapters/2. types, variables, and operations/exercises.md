@@ -17,7 +17,7 @@ Complete the following exercises in a Jupyter notebook and then push the noteboo
 5. What python lines, P and Q, would fill in this truth table in order to demonstrate [DeMorgan's Law](https://en.wikipedia.org/wiki/De_Morgan%27s_laws)? **Hint:** DeMorgan's law states that "not (A or B)" is the same as ... check the link.
 
 
-|   `x`  |   `y`  | `P`     | `Q`     | `P === Q` |
+|   `x`  |   `y`  | `P`     | `Q`     | `P == Q` |
 |:------:|:------:|:-------:|:-------:|:---------:|
 | `True` | `True` | `False` | `False` | `True`    |
 | `True` | `False`| `False` | `False` | `True`    |
