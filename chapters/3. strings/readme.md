@@ -136,7 +136,7 @@ Note that whitespace at the ends is ok!
 The `complex()` conversion function operates similarly:
 
 ```python
-x = float("1.2+3.4j")
+x = complex("1.2+3.4j")
 type(x)
 ```
 > `<class 'complex'>`
