@@ -178,6 +178,8 @@ else:
   print("The file does not exist")
 ```
 
+We will explore if statements more generally in the next chapter.
+
 
 ## More
 
