@@ -1,5 +1,5 @@
 # selected answers
-See "/solutions" for full solutions.
+See "solutions.ipynb" for full solutions.
 
 
 1. 249977
