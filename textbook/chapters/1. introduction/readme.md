@@ -20,7 +20,7 @@ CoCalc is an online collaborative environment for computation and calculation (h
 
 This repository has all of the information for this course (it's what you are looking at right now!).
 
-In each chapter folder there is a "readme.md" and an "exercises.md" file. As the names would suggest, the "readme.md" file contains the information for that chapter, and the "exercises.md" contains the exercises.
+In each chapter folder there is a "readme.md", an "exercises.md", and a "solutions.ipynb" file. As the names would suggest, the "readme.md" file contains the information for that chapter, "exercises.md" contains the exercises, and "solutions.ipynb" contains the solutions.
 
 In "readme.md", there will occasionally be links that direct you to another site to do some short reading.
 
