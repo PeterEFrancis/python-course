@@ -244,7 +244,7 @@
 	```
 	Enter # of rows and cols: 12 12
 
-	 0   1   2   3   4   5   6   7   8   9   10  11
+	    0   1   2   3   4   5   6   7   8   9   10  11
 	0   #   #   #   #   #   #   #   #   #   #   #   #  
 	1   #   #   #   #   #   #   #   #   #   #   #   #  
 	2   #   #   #   #   #   #   #   #   #   #   #   #  
@@ -261,7 +261,7 @@
 	It is Player 1's turn
 	Enter row and column to chomp: 3 3
 
-	 0   1   2   3   4   5   6   7   8   9   10  11
+	    0   1   2   3   4   5   6   7   8   9   10  11
 	0   #   #   #   #   #   #   #   #   #   #   #   #  
 	1   #   #   #   #   #   #   #   #   #   #   #   #  
 	2   #   #   #   #   #   #   #   #   #   #   #   #  
@@ -278,7 +278,7 @@
 	It is Player 2's turn
 	Enter row and column to chomp: 0 1
 
-	 0   1   2   3   4   5   6   7   8   9   10  11
+	    0   1   2   3   4   5   6   7   8   9   10  11
 	0   #  
 	1   #  
 	2   #  
@@ -295,7 +295,7 @@
 	It is Player 1's turn
 	Enter row and column to chomp: 2 0
 
-	 0   1   2   3   4   5   6   7   8   9   10  11
+	    0   1   2   3   4   5   6   7   8   9   10  11
 	0   #  
 	1   #  
 	2  
