@@ -237,7 +237,7 @@
 
 
 
-3. **Chomp**. Chomp is a two-player Nim game, where players alternate taking "bites" out of a rectangular cookie made up of smaller cookie squares. When a player bites a square, they also eat all of the cookie squares that are to the right and below. The player that eats the top left square loses. You can play online [here](https://peterefrancis.com/canvas-games/chomp/).
+3. **Chomp**. Chomp is a two-player Nim game, where players alternate taking "bites" out of a rectangular cookie made up of smaller cookie squares. When a player bites a square, they also eat all of the cookie squares that are to the right and below. The player that eats the top left square loses. You can play online [here](https://peterefrancis.com/canvas-games/games/chomp/).
 
    In this exercise, you will implement a game of chomp between two human players. First ask the user to input the desired dimensions of the board. Then, alternate asking player 1 and 2 for their move (row & col) until one player eats the top left cookie. Each turn, print the board using octothorps (`#`) for remaining cookie squares, and print numbers along the top and left side of the board, showing the row and column numbers. At the end of the game, report the winning player. You may assume that all plays are valid.
 
@@ -379,9 +379,9 @@
 	> `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]`
 
 8. **Shuffling Arrays**. Define a list of integers `a`. Then
- 1. write a program to create a new array that has been shuffled by randomly accessing (and removing) the elements from `a`,
- 2. use the [Fisher Yates Shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) to shuffle `a` in-place,
- 3. use the `random.shuffle()` to shuffle `a` in-place
+ - write a program to create a new array that has been shuffled by randomly accessing (and removing) the elements from `a`,
+ - use the [Fisher Yates Shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) to shuffle `a` in-place,
+ - use the `random.shuffle()` to shuffle `a` in-place
 
 9. **Reverse a list**. Define a list `a`. Then create a list `b` so that `a[::-1] == b`. (Do this without using `[::-1]`).
 
