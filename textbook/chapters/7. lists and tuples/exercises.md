@@ -240,78 +240,78 @@
 
 	In this exercise, you will implement a game of chomp between two human players. First ask the user to input the desired dimensions of the board. Then, alternate asking player 1 and 2 for their move (row & col) until one player eats the top left cookie. Each turn, print the board using octothorps (`#`) for remaining cookie squares, and print numbers along the top and left side of the board, showing the row and column numbers. At the end of the game, report the winning player. You may assume that all plays are valid.
 
-	 Sample transcript:
+	Sample transcript:
 	```
-	    Enter # of rows and cols: 12 12
+	Enter # of rows and cols: 12 12
 
-		 0   1   2   3   4   5   6   7   8   9   10  11
-	     0   #   #   #   #   #   #   #   #   #   #   #   #  
-	     1   #   #   #   #   #   #   #   #   #   #   #   #  
-	     2   #   #   #   #   #   #   #   #   #   #   #   #  
-	     3   #   #   #   #   #   #   #   #   #   #   #   #  
-	     4   #   #   #   #   #   #   #   #   #   #   #   #  
-	     5   #   #   #   #   #   #   #   #   #   #   #   #  
-	     6   #   #   #   #   #   #   #   #   #   #   #   #  
-	     7   #   #   #   #   #   #   #   #   #   #   #   #  
-	     8   #   #   #   #   #   #   #   #   #   #   #   #  
-	     9   #   #   #   #   #   #   #   #   #   #   #   #  
-	     10  #   #   #   #   #   #   #   #   #   #   #   #  
-	     11  #   #   #   #   #   #   #   #   #   #   #   #  
+	 0   1   2   3   4   5   6   7   8   9   10  11
+	0   #   #   #   #   #   #   #   #   #   #   #   #  
+	1   #   #   #   #   #   #   #   #   #   #   #   #  
+	2   #   #   #   #   #   #   #   #   #   #   #   #  
+	3   #   #   #   #   #   #   #   #   #   #   #   #  
+	4   #   #   #   #   #   #   #   #   #   #   #   #  
+	5   #   #   #   #   #   #   #   #   #   #   #   #  
+	6   #   #   #   #   #   #   #   #   #   #   #   #  
+	7   #   #   #   #   #   #   #   #   #   #   #   #  
+	8   #   #   #   #   #   #   #   #   #   #   #   #  
+	9   #   #   #   #   #   #   #   #   #   #   #   #  
+	10  #   #   #   #   #   #   #   #   #   #   #   #  
+	11  #   #   #   #   #   #   #   #   #   #   #   #  
 
-	    It is Player 1's turn
-	    Enter row and column to chomp: 3 3
+	It is Player 1's turn
+	Enter row and column to chomp: 3 3
 
-		 0   1   2   3   4   5   6   7   8   9   10  11
-	     0   #   #   #   #   #   #   #   #   #   #   #   #  
-	     1   #   #   #   #   #   #   #   #   #   #   #   #  
-	     2   #   #   #   #   #   #   #   #   #   #   #   #  
-	     3   #   #   #  
-	     4   #   #   #  
-	     5   #   #   #  
-	     6   #   #   #  
-	     7   #   #   #  
-	     8   #   #   #  
-	     9   #   #   #  
-	     10  #   #   #  
-	     11  #   #   #  
+	 0   1   2   3   4   5   6   7   8   9   10  11
+	0   #   #   #   #   #   #   #   #   #   #   #   #  
+	1   #   #   #   #   #   #   #   #   #   #   #   #  
+	2   #   #   #   #   #   #   #   #   #   #   #   #  
+	3   #   #   #  
+	4   #   #   #  
+	5   #   #   #  
+	6   #   #   #  
+	7   #   #   #  
+	8   #   #   #  
+	9   #   #   #  
+	10  #   #   #  
+	11  #   #   #  
 
-	    It is Player 2's turn
-	    Enter row and column to chomp: 0 1
+	It is Player 2's turn
+	Enter row and column to chomp: 0 1
 
-		 0   1   2   3   4   5   6   7   8   9   10  11
-	     0   #  
-	     1   #  
-	     2   #  
-	     3   #  
-	     4   #  
-	     5   #  
-	     6   #  
-	     7   #  
-	     8   #  
-	     9   #  
-	     10  #  
-	     11  #  
+	 0   1   2   3   4   5   6   7   8   9   10  11
+	0   #  
+	1   #  
+	2   #  
+	3   #  
+	4   #  
+	5   #  
+	6   #  
+	7   #  
+	8   #  
+	9   #  
+	10  #  
+	11  #  
 
-	    It is Player 1's turn
-	    Enter row and column to chomp: 2 0
+	It is Player 1's turn
+	Enter row and column to chomp: 2 0
 
-		 0   1   2   3   4   5   6   7   8   9   10  11
-	     0   #  
-	     1   #  
-	     2  
-	     3  
-	     4  
-	     5  
-	     6  
-	     7  
-	     8  
-	     9  
-	     10
-	     11
+	 0   1   2   3   4   5   6   7   8   9   10  11
+	0   #  
+	1   #  
+	2  
+	3  
+	4  
+	5  
+	6  
+	7  
+	8  
+	9  
+	10
+	11
 
-	    It is Player 2's turn
-	    Enter row and column to chomp: 0 0
-	    Player 1 wins!
+	It is Player 2's turn
+	Enter row and column to chomp: 0 0
+	Player 1 wins!
 	```
 
 
