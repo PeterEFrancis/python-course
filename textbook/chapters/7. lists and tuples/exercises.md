@@ -202,14 +202,13 @@
 
 2. **Three-Pile Nim** (Neller). In the 3-pile game of Nim, two players begin with three piles containing one or more objects. In turn, each player chooses a non-empty pile and removes one or more objects from it. (It is legal to take all objects of a pile.) The player taking the last object of the last pile wins.
 
- In your implementation, you should internally represent the number of objects in each pile as an array of length 3.  Position n in that array will contain the number of objects in pile n.  The program initially reads the 3 initial pile sizes from the user.  Assume that these will be positive integers.  Then the game will begin.
+	 In your implementation, you should internally represent the number of objects in each pile as an array of length 3.  Position n in that array will contain the number of objects in pile n.  The program initially reads the 3 initial pile sizes from the user.  Assume that these will be positive integers.  Then the game will begin.
 
- At the beginning of each turn, the current state of each pile is represented in text as one line per pile, each with the 0-based pile number followed by a colon and a number of asterisks equal to the number of objects currently in the pile.  Then the user inputs two integers: (1) the 0-based  pile number, and (2) the number of objects that are to be removed from that pile.  Assume that such input is a legal play.  Turns continue until all piles are empty. At the end of the game, report who wins.
+	 At the beginning of each turn, the current state of each pile is represented in text as one line per pile, each with the 0-based pile number followed by a colon and a number of asterisks equal to the number of objects currently in the pile.  Then the user inputs two integers: (1) the 0-based  pile number, and (2) the number of objects that are to be removed from that pile.  Assume that such input is a legal play.  Turns continue until all piles are empty. At the end of the game, report who wins.
 
- **NOTE:** It should not be difficult at all to modify your code to play `k`-pile Nim. In fact, you can write your program generally, so that any number of pile-size inputs can be given.
+	 **NOTE:** It should not be difficult at all to modify your code to play `k`-pile Nim. In fact, you can write your program generally, so that any number of pile-size inputs can be given.
 
-Sample Transcript:
-
+	Sample Transcript:
 	```
 	Enter pile sizes: 1 2 3
 	0: *
@@ -239,81 +238,80 @@ Sample Transcript:
 
 3. **Chomp**. Chomp is a two-player Nim game, where players alternate taking "bites" out of a rectangular cookie made up of smaller cookie squares. When a player bites a square, they also eat all of the cookie squares that are to the right and below. The player that eats the top left square loses. You can play online [here](https://peterefrancis.com/canvas-games/games/chomp/).
 
-   In this exercise, you will implement a game of chomp between two human players. First ask the user to input the desired dimensions of the board. Then, alternate asking player 1 and 2 for their move (row & col) until one player eats the top left cookie. Each turn, print the board using octothorps (`#`) for remaining cookie squares, and print numbers along the top and left side of the board, showing the row and column numbers. At the end of the game, report the winning player. You may assume that all plays are valid.
+	In this exercise, you will implement a game of chomp between two human players. First ask the user to input the desired dimensions of the board. Then, alternate asking player 1 and 2 for their move (row & col) until one player eats the top left cookie. Each turn, print the board using octothorps (`#`) for remaining cookie squares, and print numbers along the top and left side of the board, showing the row and column numbers. At the end of the game, report the winning player. You may assume that all plays are valid.
 
- Sample transcript:
-
+	 Sample transcript:
 	```
-    Enter # of rows and cols: 12 12
+	    Enter # of rows and cols: 12 12
 
-         0   1   2   3   4   5   6   7   8   9   10  11
-     0   #   #   #   #   #   #   #   #   #   #   #   #  
-     1   #   #   #   #   #   #   #   #   #   #   #   #  
-     2   #   #   #   #   #   #   #   #   #   #   #   #  
-     3   #   #   #   #   #   #   #   #   #   #   #   #  
-     4   #   #   #   #   #   #   #   #   #   #   #   #  
-     5   #   #   #   #   #   #   #   #   #   #   #   #  
-     6   #   #   #   #   #   #   #   #   #   #   #   #  
-     7   #   #   #   #   #   #   #   #   #   #   #   #  
-     8   #   #   #   #   #   #   #   #   #   #   #   #  
-     9   #   #   #   #   #   #   #   #   #   #   #   #  
-     10  #   #   #   #   #   #   #   #   #   #   #   #  
-     11  #   #   #   #   #   #   #   #   #   #   #   #  
+		 0   1   2   3   4   5   6   7   8   9   10  11
+	     0   #   #   #   #   #   #   #   #   #   #   #   #  
+	     1   #   #   #   #   #   #   #   #   #   #   #   #  
+	     2   #   #   #   #   #   #   #   #   #   #   #   #  
+	     3   #   #   #   #   #   #   #   #   #   #   #   #  
+	     4   #   #   #   #   #   #   #   #   #   #   #   #  
+	     5   #   #   #   #   #   #   #   #   #   #   #   #  
+	     6   #   #   #   #   #   #   #   #   #   #   #   #  
+	     7   #   #   #   #   #   #   #   #   #   #   #   #  
+	     8   #   #   #   #   #   #   #   #   #   #   #   #  
+	     9   #   #   #   #   #   #   #   #   #   #   #   #  
+	     10  #   #   #   #   #   #   #   #   #   #   #   #  
+	     11  #   #   #   #   #   #   #   #   #   #   #   #  
 
-    It is Player 1's turn
-    Enter row and column to chomp: 3 3
+	    It is Player 1's turn
+	    Enter row and column to chomp: 3 3
 
-         0   1   2   3   4   5   6   7   8   9   10  11
-     0   #   #   #   #   #   #   #   #   #   #   #   #  
-     1   #   #   #   #   #   #   #   #   #   #   #   #  
-     2   #   #   #   #   #   #   #   #   #   #   #   #  
-     3   #   #   #  
-     4   #   #   #  
-     5   #   #   #  
-     6   #   #   #  
-     7   #   #   #  
-     8   #   #   #  
-     9   #   #   #  
-     10  #   #   #  
-     11  #   #   #  
+		 0   1   2   3   4   5   6   7   8   9   10  11
+	     0   #   #   #   #   #   #   #   #   #   #   #   #  
+	     1   #   #   #   #   #   #   #   #   #   #   #   #  
+	     2   #   #   #   #   #   #   #   #   #   #   #   #  
+	     3   #   #   #  
+	     4   #   #   #  
+	     5   #   #   #  
+	     6   #   #   #  
+	     7   #   #   #  
+	     8   #   #   #  
+	     9   #   #   #  
+	     10  #   #   #  
+	     11  #   #   #  
 
-    It is Player 2's turn
-    Enter row and column to chomp: 0 1
+	    It is Player 2's turn
+	    Enter row and column to chomp: 0 1
 
-         0   1   2   3   4   5   6   7   8   9   10  11
-     0   #  
-     1   #  
-     2   #  
-     3   #  
-     4   #  
-     5   #  
-     6   #  
-     7   #  
-     8   #  
-     9   #  
-     10  #  
-     11  #  
+		 0   1   2   3   4   5   6   7   8   9   10  11
+	     0   #  
+	     1   #  
+	     2   #  
+	     3   #  
+	     4   #  
+	     5   #  
+	     6   #  
+	     7   #  
+	     8   #  
+	     9   #  
+	     10  #  
+	     11  #  
 
-    It is Player 1's turn
-    Enter row and column to chomp: 2 0
+	    It is Player 1's turn
+	    Enter row and column to chomp: 2 0
 
-         0   1   2   3   4   5   6   7   8   9   10  11
-     0   #  
-     1   #  
-     2  
-     3  
-     4  
-     5  
-     6  
-     7  
-     8  
-     9  
-     10
-     11
+		 0   1   2   3   4   5   6   7   8   9   10  11
+	     0   #  
+	     1   #  
+	     2  
+	     3  
+	     4  
+	     5  
+	     6  
+	     7  
+	     8  
+	     9  
+	     10
+	     11
 
-    It is Player 2's turn
-    Enter row and column to chomp: 0 0
-    Player 1 wins!
+	    It is Player 2's turn
+	    Enter row and column to chomp: 0 0
+	    Player 1 wins!
 	```
 
 
