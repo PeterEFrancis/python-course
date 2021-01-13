@@ -208,7 +208,7 @@
 
  **NOTE:** It should not be difficult at all to modify your code to play `k`-pile Nim. In fact, you can write your program generally, so that any number of pile-size inputs can be given.
 
-	Sample Transcript:
+Sample Transcript:
 
 	```
 	Enter pile sizes: 1 2 3
