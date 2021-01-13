@@ -237,7 +237,7 @@
 
 
 
-3. **Chomp**. Chomp is a two-player Nim game, where players alternate taking "bites" out of a rectangular cookie made up of smaller cookie squares. When a player bites a square, they also eat all of the cookie squares that are to the right and below. The player that eats the top left square loses. You can play online [here](https://peterefrancis.com/canvas-games/chomp/).
+3. **Chomp**. Chomp is a two-player Nim game, where players alternate taking "bites" out of a rectangular cookie made up of smaller cookie squares. When a player bites a square, they also eat all of the cookie squares that are to the right and below. The player that eats the top left square loses. You can play online [here](https://peterefrancis.com/canvas-games/games/chomp/).
 
    In this exercise, you will implement a game of chomp between two human players. First ask the user to input the desired dimensions of the board. Then, alternate asking player 1 and 2 for their move (row & col) until one player eats the top left cookie. Each turn, print the board using octothorps (`#`) for remaining cookie squares, and print numbers along the top and left side of the board, showing the row and column numbers. At the end of the game, report the winning player. You may assume that all plays are valid.
 
