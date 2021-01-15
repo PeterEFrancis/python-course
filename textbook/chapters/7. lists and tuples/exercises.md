@@ -197,7 +197,7 @@
 		Roll: 2
 	Turn total: 14
 	New score: 101
-	The winner is: Player 2
+	The winner is: Player 1
 	```
 
 2. **Three-Pile Nim** (Neller). In the 3-pile game of Nim, two players begin with three piles containing one or more objects. In turn, each player chooses a non-empty pile and removes one or more objects from it. (It is legal to take all objects of a pile.) The player taking the last object of the last pile wins.
