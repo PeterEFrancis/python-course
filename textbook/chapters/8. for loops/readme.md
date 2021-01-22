@@ -154,7 +154,7 @@ As stated before, `for` loops are generally used when the number of iterations i
 
 ```python
 a = [1, 2, 3, 4]
-for i in a;:
+for i in a:
 	print(i)
 	a.append(i)
 ```
