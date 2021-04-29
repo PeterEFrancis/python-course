@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Introduction to Python</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+      .key {
+        padding: 5px;
+        border: 1px solid black;
+      }
+
+      .divider td {
+        background-color: black;
+        height: 5px;
+        padding: 0px !important;
+      }
+
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Intro to Python</h1>
+  <p>Winter 2020</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <h3>Class Links</h3>
+      <ul class="list-group">
+        <li class="list-group-item"><a href="https://github.com/PeterEFrancis/python-course" target="_blank">Course Reading and Assignments (GitHub Repository)</a></li>
+        <li class="list-group-item"><a href="../FAQ.html">FAQ</a></li>
+        <li class="list-group-item"><a href="../python_and_git.html">Installing Python and Git (not required)</a></li>
+        <!-- <li class="list-group-item"><a href="2020/progress.html">Students</a></li> -->
+      </ul>
+      <br>
+      <h3>Chapters</h3>
+      <ol>
+        <li><strong>Introduction</strong>
+        <li><strong>Types, Variables, and Operations</strong></li>
+        <li><strong>Strings</strong></li>
+        <li><strong>Input and Output</strong></li>
+        <li><strong>Conditionals</strong></li>
+        <li><strong>while Loops</strong></li>
+        <li><strong>Lists and Tuples</strong></li>
+        <li><strong>for Loops</strong></li>
+        <li><strong>functions</strong></li>
+        .<br>
+        .<br>
+        .
+      </ol>
+      <br>
+      <h3>Zoom Info</h3>
+      <p>Link: <a href="https://gettysburg.zoom.us/j/94450866591" target="_blank">Click here to join</a></p>
+      <label>Meeting ID (click to copy): <input class="form-control" onclick="this.select();document.execCommand('copy');" value="944 5086 6591" readonly></input></label>
+      <br>
+      <br>
+      <h3>Resources</h3>
+      <ul class="list-group">
+        <li class="list-group-item"><a href="https://github.com" target="_blank">GitHub</a></li>
+        <li class="list-group-item"><a href="https://www.w3schools.com/python/default.asp" target="_blank">W3Schools</a></li>
+      </ul>
+      <br>
+      <h3>PLAs</h3>
+      <ul class="list-group">
+        <li class="list-group-item"><strong>Section A:</strong> <a href="" data-toggle="modal" data-target="#will-modal">Will Durham</a></li>
+        <li class="list-group-item"><strong>Section B:</strong> <a href="" data-toggle="modal" data-target="#ricky-modal">Ricky Miranda</a></li>
+        <li class="list-group-item"><strong>Section C:</strong> <a href="" data-toggle="modal" data-target="#emily-modal">Emily Dalgleish</a></li>
+      </ul>
+
+
+      <div id="will-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Will Durham</h4>
+            </div>
+            <div class="modal-body">
+              <div class="square">
+                <img style="float:left; margin-right: 10px; width: 100px;" src= "img/will.jpeg"/>
+              </div>
+              <p>Hello everyone, many of you may already know me, but for those of you who don't I'll provide a brief introduction. I am a Mathematical Economics major at Gettysburg College with minors in Music and Mathematics. I took this course with Peter over the summer and enthusiastically volunteered to help him with this winter session.  You can reach me through GroupMe with any questions. I look forward to working with you!</p>
+              <br>
+              <a href="https://www.linkedin.com/in/will-durham/">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="ricky-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Ricky Miranda</h4>
+            </div>
+            <div class="modal-body">
+              <div class="square">
+                <img style="float:left; margin-right: 10px; width: 100px;" src= "img/ricky.jpeg"/>
+              </div>
+              <p>I let Peter choose this photo for me just FYI. A brief summary of me: I am a Computer Science and Mathematics major with a minor in Physics. I've been working closely with Peter in Physics until the start of our junior year when we both decided to switch to a math major, and so now I am here helping out! Feel free to contact me through GroupMe, I'll be more than happy to help. </p>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="emily-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Emily Dalgleish</h4>
+            </div>
+            <div class="modal-body">
+              <div class="square">
+                <img style="float:left; margin-right: 10px; width: 100px;" src= "img/emily.jpeg"/>
+              </div>
+              <p>HELLOOOOOOO! I am excited because I know many of you and I am excited to talk to those I don’t know. This summer, I joined Peter’s Python for the friends, and stayed for the programming fun. To my surprise, he invited me to PLA his course, though I still am not sure if I know what I am doing. I am hypothetically a junior studying political science and public policy, but I took a gap semester to campaign and now that has turned in to a gap year. So, that’s been an adventure. Please message me or text me or call me if you have questions and we can figure it out together!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="col-sm-9">
+      <h3>Welcome to an <strong>Introduction to Python</strong>!</h3>
+      <div class="row">
+        <div class="col-sm-9">
+          <p>
+            I am very excited to share my love of python with you.
+            While this course will not give you any school credit, I believe that you will enjoy yourselves as well as gain valuable skills.
+            We will start with the basics and then move toward more complicated topics, including some basic data structures and advanced algorithms!
+          </p>
+          <p>
+            Learning a programming language is very rewarding: it will open your mind to an entirely new set of problems and tasks that you are able to solve and complete.
+            That being said, you will get out of this course exactly what you put into it.
+            We will have no quizzes or exams, so the pressure to move forward and learn must come from you!
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <img class="img-responsive" style="max-width: 150px;" src="../img/python_logo.png">
+        </div>
+      </div>
+
+      <br>
+      <h3>Schedule</h3>
+      <ul>
+        <li><strong>Section A:</strong> 2:00 pm -- 3:30 pm EST</li>
+        <li><strong>Section B:</strong> 4:30 pm -- 6:00 pm EST</li>
+        <li><strong>Section C:</strong> 7:30 pm -- 9:00 pm EST</li>
+      </ul>
+
+      <div class="table-responsive">
+        <table class="table table-bordered" style="border: 5px solid black;">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>In-class Content</th>
+              <th>Assignment Due at Beginning of Class</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr class="divider"><td colspan="3"></td></tr>
+
+            <tr class="bg-success">
+              <td>Monday, Dec 14</td>
+              <td>Find partner groups<br>Create CoCalc account<br>Lecture on Chapter 1<br>Work on Chapter 1 exercises</td>
+              <td></td>
+            </tr>
+            <tr class="bg-success">
+              <td>Wednesday, Dec 16</td>
+              <td>Lecture on Chapter 2<br>Start Chapter 2 Exercises</td>
+              <td>Chapter 1 exercise "Intro to CoCalc"<br>Read Chapter 2</td>
+            </tr>
+            <tr class="bg-success">
+              <td>Friday, Dec 18</td>
+              <td>Lecture on Chapter 3<br>Work on Chapter 2-3 Exercises</td>
+              <td>Read Chapter 3</td>
+            </tr>
+
+            <tr class="divider"><td colspan="3"></td></tr>
+
+            <tr class="bg-success">
+              <td>Monday, Dec 21</td>
+              <td>Work on Chapter 3 exercises</td>
+              <td>Chapter 2 exercises 1-13</td>
+            </tr>
+            <tr class="bg-success">
+              <td>Wednesday, Dec 23</td>
+              <td>Lecture on Chapter 4<br>Work on Chapter 4 Exercises</td>
+              <td>Chapter 3 exercises 1-8<br>Read Chapter 4</td>
+            </tr>
+            <tr class="bg-success">
+              <td>Friday, Dec 25</td>
+              <td>NO CLASS</td>
+              <td></td>
+            </tr>
+
+            <tr class="divider"><td colspan="3"></td></tr>
+
+            <tr class="bg-success">
+              <td>Monday, Dec 28</td>
+              <td>OPTIONAL CLASS<br>Fun activity</td>
+              <td></td>
+            </tr>
+            <tr class="bg-success">
+              <td>Wednesday, Dec 30</td>
+              <td>NO CLASS</td>
+              <td></td>
+            </tr>
+            <tr class="bg-success">
+              <td>Friday, Jan 1</td>
+              <td>NO CLASS</td>
+              <td></td>
+            </tr>
+
+            <tr class="divider"><td colspan="3"></td></tr>
+
+            <tr class="bg-success">
+              <td>Monday, Jan 4</td>
+              <td>Lecture on Chapter 5<br>Work on Chapter 5 exercises</td>
+              <td>Chapter 4 exercises 1-2<br>Read Chapter 5</td>
+            </tr>
+            <tr class="bg-success">
+              <td>Wednesday, Jan 6</td>
+              <td>Work on Chapter 5 exercises</td>
+              <td></td>
+            </tr>
+            <tr class="bg-success">
+              <td>Friday, Jan 8</td>
+              <td>Lecture on Chapter 6<br>Work on Chapter 6 exercises</td>
+              <td>Chapter 5 exercises 1-11<br>Read Chapter 6</td>
+            </tr>
+
+            <tr class="divider"><td colspan="3"></td></tr>
+
+            <tr class="bg-success">
+              <td>Monday, Jan 11</td>
+              <td>Work on Chapter 6 exercises</td>
+              <td></td>
+            </tr>
+            <tr class="bg-success">
+              <td>Wednesday, Jan 13</td>
+              <td>Review Chapter 5 Exercises<br>Lecture on Chapter 7<br>Work on Chapter 7 exercises</td>
+              <td>Chapter 6 exercises 1-13<br>Read Chapter 7</td>
+            </tr>
+            <tr class="bg-success">
+              <td>Friday, Jan 15</td>
+              <td>Review Chapter 6 Exercises<br>Work on Chapter 7 exercises</td>
+              <td>Chapter 7 exercises #1, 4, 6</td>
+            </tr>
+
+            <tr class="divider"><td colspan="3"></td></tr>
+
+            <tr class="bg-success">
+              <td>Monday, Jan 18</td>
+              <td>Work on Chapter 7 exercises</td>
+              <td>Chapter 7 exercises #2, 3, 8, 9</td>
+            </tr>
+            <tr class="bg-success">
+              <td>Wednesday, Jan 20</td>
+              <td>Lecture on Chapter 8<br>Work on Chapter 8 exercises</td>
+              <td>Chapter 7 exercises #5, 7, 10</td>
+            </tr>
+            <tr class="bg-success">
+              <td>Friday, Jan 22</td>
+              <td>Chapter 9 Lecture<br>Work on Chapter 8 exercises</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+
+      <div style="max-width: 150px; margin-left: auto">
+        <h5>Schedule Key</h5>
+        <p class="key bg-success">Completed</p>
+        <!-- <p class="key bg-info">In progress</p> -->
+        <p class="key">Upcoming</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+<br><br><br><br>
+</body>
+</html>
