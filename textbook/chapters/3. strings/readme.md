@@ -79,6 +79,8 @@ a = a + a   # a points to the new string "FooFoo", but b still points to the old
 print(a)
 print(b)
 ```
+> `FooFoo`
+> `Foo`
 Observe that `b` hasn't changed, even though `a` has; the string literal objects `"Foo"` and `"FooFoo"` have not changed.
 
 We can use `*` to create repeated strings as follows:
