@@ -4,8 +4,6 @@
 
 1. Go to https://cocalc.com and sign in (create an account if you don't already have one).
 
-2. Paste the code `NtfpnE1gfC6Az16N` into the **Project invite token** input box on the top right. You should see a new project show up called "Python Course Winter 2020". Open the project.
-
 3. Create a new folder with you and your partner's name (only one of you has to do this). This goes without saying, but don't mess with another person's folder.
 
 
